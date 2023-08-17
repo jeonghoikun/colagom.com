@@ -5,7 +5,11 @@
 	{{template "components/head/seo" .}}
 	{{template "components/head/styles"}}
 </head>
-<body class="antialiased">
+<body class="antialiased bg-black text-gray-300">
+	<header>
+		header
+	</header>
 	<main>{{embed}}</main>
+	{{template "components/footer/global" .}}
 </body>
 </html>
