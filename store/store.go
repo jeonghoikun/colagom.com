@@ -150,10 +150,10 @@ func setStoreKeywords() {
 func setPhoneNumbers() {
 	for _, s := range stores {
 		switch s.Type {
-		//		case STORE_TYPE_DOT5:
-		//			s.PhoneNumber = "010-2222-2222"
-		//		case STORE_TYPE_CLUB:
-		//			s.PhoneNumber = "010-3333-3333"
+		case STORE_TYPE_DOT5:
+			s.PhoneNumber = "010-2170-4981"
+		case STORE_TYPE_CLUB, STORE_TYPE_HOBBA:
+			s.PhoneNumber = "010-6590-7589"
 		default:
 			s.PhoneNumber = site.Config.PhoneNumber
 		}
