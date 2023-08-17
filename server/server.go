@@ -47,8 +47,8 @@ func engine() *html.Engine {
 func New(portNumber uint32) *Server {
 	p := port(portNumber)
 	app := fiber.New(fiber.Config{
-		AppName:      "",
-		ServerHeader: "",
+		AppName:      site.Config.Domain,
+		ServerHeader: site.Config.Domain,
 		Views:        engine(),
 	})
 	return &Server{port: &p, app: app}
