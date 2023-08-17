@@ -134,7 +134,7 @@ func initKaraoke() {
 		},
 		Type:        STORE_TYPE_KARAOKE,
 		Title:       "퍼펙트",
-		Description: "",
+		Description: "강남 퍼펙트 가라오케에서 최상의 음향 시스템과 다양한 노래 선택으로 당신의 노래 실력을 뽐내보세요. 편안하고 고품격한 분위기에서 친구들과 즐거운 노래 시간을 만끽해보세요. 강남 지역에서 가장 완벽한 가라오케 경험을 제공합니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -160,7 +160,7 @@ func initShirtRoom() {
 		},
 		Type:        STORE_TYPE_SHIRTROOM,
 		Title:       "디씨",
-		Description: "",
+		Description: "강남 디씨 셔츠룸: 최상의 편안함과 품격을 누리며 특별한 시간을 보내세요. 다양한 스타일의 셔츠와 고급 편의시설로 편안한 공간에서 휴식과 레저를 만끽하세요. 강남의 럭셔리한 디씨 셔츠룸에서 특별한 순간을 함께하세요.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -183,7 +183,7 @@ func initShirtRoom() {
 		},
 		Type:        STORE_TYPE_SHIRTROOM,
 		Title:       "유앤미",
-		Description: "",
+		Description: "강남 유앤미 셔츠룸 - 최상의 서비스와 편안한 분위기로 당신의 특별한 순간을 즐기세요. 다양한 셔츠룸 테마와 고급 시설로 편안한 휴식과 함께 특별한 추억을 만들어보세요.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -209,7 +209,7 @@ func initHighPublic() {
 		},
 		Type:        STORE_TYPE_HIGHPUBLIC,
 		Title:       "달토",
-		Description: "",
+		Description: "강남 달토 하이퍼블릭 주점 – 트렌디한 분위기와 다양한 음료 메뉴로 당신의 시간을 특별하게 채워드립니다. 감각적인 칵테일과 편안한 공간에서 지금 당신의 모든 감각을 만족시켜보세요. 강남에서의 눈부신 밤을 달콤하게 완성해드립니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -235,7 +235,7 @@ func initHighPublic() {
 		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
-			Reason:            "",
+			Reason:            "강남 트렌드 하이퍼블릭. 최상의 서비스와 현대적인 분위기로 당신을 초대합니다. 다채로운 음료와 함께하는 흥겨운 밤을 만나보세요. 강남에서 트렌디한 놀이문화를 즐기는 새로운 방식을 경험하세요.",
 		},
 		Hour: &Hour{
 			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
@@ -255,7 +255,7 @@ func initHighPublic() {
 		},
 		Type:        STORE_TYPE_HIGHPUBLIC,
 		Title:       "사라있네",
-		Description: "",
+		Description: "강남 사라있네 하이퍼블릭 - 활기찬 강남의 유흥주점 문화를 만끽하세요. 다채로운 엔터테인먼트와 편안한 분위기가 어우러진 곳에서 특별한 순간을 누려보세요. 음악, 음료, 그리고 즐거움이 가득한 공간에서 즐거운 시간을 보내세요.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -281,7 +281,7 @@ func initLeggingsRoom() {
 		},
 		Type:        STORE_TYPE_LEGGINGS,
 		Title:       "하이킥",
-		Description: "",
+		Description: "강남 하이킥 레깅스룸 - 최상의 유흥주점 경험을 위한 선택. 감각적인 분위기에서 다채로운 음료와 함께 즐거운 시간을 보내세요. 프리미엄 서비스로 편안하고 특별한 순간을 만끽하세요. 강남 지역에서의 완벽한 레저 활동을 위한 최적의 장소입니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -307,7 +307,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "유니크",
-		Description: "",
+		Description: "강남 유니크 쩜오 - 감각적인 분위기와 다채로운 음악으로 즐거운 시간을 제공하는 강남 유흥주점. 특별한 경험과 맛있는 칵테일로 당신의 밤을 더욱 특별하게 만들어 드립니다. 예약 및 방문 문의 환영!",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -330,7 +330,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "831",
-		Description: "",
+		Description: "강남 831 쩜오 - 화려한 유흥주점의 최상급 엔터테인먼트! 강남에서 누리는 놀라운 밤의 경험, 다채로운 행사와 음악, 풍성한 메뉴로 특별한 시간을 만끽하세요. 높은 서비스 퀄리티와 편안한 분위기가 어우러진 강남의 명성 있는 유흥 장소.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -353,7 +353,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "에이원",
-		Description: "",
+		Description: "강남의 화려한 밤을 빛내는 유흥주점, 강남 에이원 쩜오 입니다. 최상의 서비스와 다채로운 엔터테인먼트로 즐거운 시간을 보내세요. 미식과 음악, 다채로운 분위기가 어우러진 강남의 핫 스팟에서 특별한 순간을 만끽해보세요.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -376,7 +376,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "미라클",
-		Description: "",
+		Description: "강남 미라클 쩜오 - 뛰어난 유흥과 엔터테인먼트를 즐길 수 있는 강남의 대표적인 미라클 쩜오 유흥주점. 화려한 분위기와 다채로운 이벤트로 특별한 시간을 만끽하세요.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -399,7 +399,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "오키도키",
-		Description: "",
+		Description: "강남 오키도키 쩜오 - 끝없는 즐거움과 화려한 엔터테인먼트가 어우러진 강남의 유흥주점. 다채로운 음악과 화려한 무대, 맛있는 음식으로 환상적인 시간을 만끽하세요. 감각적인 놀이와 함께하는 특별한 순간들이 기다립니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -422,7 +422,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "인트로",
-		Description: "",
+		Description: "강남 인트로 쩜오(XXO) - 강남에서 빛나는 유흥주점과 열정적인 클럽 문화가 어우러진 곳. 최상의 음악과 고급스러운 분위기에서 펼쳐지는 미모와 역동의 순간을 만끽하세요. 강남의 뜨거운 밤을 감동으로 만들어 줄 인트로 쩜오에서 특별한 시간을 누리세요.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -445,7 +445,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "머니볼",
-		Description: "",
+		Description: "강남 머니볼 쩜오 - 강남에서 새로운 레벨의 유흥과 엔터테인먼트를 경험하세요. 머니볼 쩜오는 트렌디한 강남지역에서 화려한 유흥주점으로, 다채로운 이벤트와 신나는 분위기로 당신의 밤을 더욱 특별하게 만들어드립니다. 친구들과 함께 머니볼 쩜오에서 환상적인 시간을 보내보세요!",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -468,7 +468,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "라이징",
-		Description: "",
+		Description: "강남 라이징 쩜오(meta) - 강남지역의 뛰어난 유흥주점으로, 열정 넘치는 분위기와 다양한 음료 메뉴로 최상의 놀이와 휴식을 선사합니다. 대표적인 엔터테인먼트와 실내공간으로 즐거운 시간을 만끽하세요. 강남 라이징 쩜오에서 특별한 순간을 함께하세요.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -491,7 +491,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "임팩트",
-		Description: "",
+		Description: "강남 임팩트 쩜오 – 최고의 유흥주점으로서 강력한 엔터테인먼트와 화려한 분위기로 강남의 밤을 빛내는 곳입니다. 다채로운 프로그램과 풍부한 음료 메뉴로 즐거운 시간을 보내실 수 있습니다. 감각적인 무드와 함께하는 강남의 아름다운 밤을 경험해보세요.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -514,7 +514,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "우체통",
-		Description: "",
+		Description: "강남 우체통 쩜오 - 강남지역 유흥주점 정보와 다양한 놀거리를 제공하는 플랫폼입니다. 강남의 핫한 클럽, 바, 라운지 등 다양한 엔터테인먼트 장소 정보를 확인하고 즐거운 시간을 보내세요!",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -537,7 +537,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "에프원",
-		Description: "",
+		Description: "강남의 섹시하고 화려한 세계, 강남 에프원 쩜오. 열정 넘치는 라이브 퍼포먼스와 다채로운 음악으로 풍성한 시간을 만끽하세요. 감각적인 조명과 멋진 분위기 속에서 친구들과 즐거운 시간을 보내실 수 있는 유흥주점입니다. 강남의 밤을 더욱 빛나게 하는 곳, 강남 에프원 쩜오에서 특별한 순간을 누려보세요.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -563,7 +563,7 @@ func initClub() {
 		},
 		Type:        STORE_TYPE_CLUB,
 		Title:       "사운드",
-		Description: "",
+		Description: "강남 사운드 클럽은 대한민국 서울의 역사적인 클럽 문화를 대표하는 곳입니다. 최신 음향 시스템과 화려한 조명, 다양한 음악 장르로 빛나는 클럽에서 특별한 밤을 경험해보세요. 강남 사운드 클럽에서는 역량 있는 DJs의 라이브 퍼포먼스와 함께 춤과 음악의 열기를 만끽할 수 있습니다. 클래식부터 현대 음악까지 모두를 위한 장소로, 당신의 특별한 순간을 새롭게 만들어보세요.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -586,7 +586,7 @@ func initClub() {
 		},
 		Type:        STORE_TYPE_CLUB,
 		Title:       "레이스",
-		Description: "",
+		Description: "강남 레이스 클럽: 음악과 리듬이 만나는 열정적인 댄스 파티 공간. 최신 음악과 화려한 조명이 어우러진 클럽에서 펼쳐지는 환상적인 댄스 파티를 즐겨보세요. 강남의 역동적인 밤문화를 대표하는 레이스 클럽은 다채로운 춤과 음악, 끊임없는 즐거움이 당신을 기다립니다. 함께 뛰어난 음악과 함께 춤추며 즐거움을 누려보세요!",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -612,7 +612,7 @@ func initHobba() {
 		},
 		Type:        STORE_TYPE_HOBBA,
 		Title:       "어게인",
-		Description: "",
+		Description: "강남 어게인 호빠: 열정 넘치는 클럽 분위기와 다채로운 음악, 화려한 조명 아래에서 최상의 엔터테인먼트를 경험하세요. 강남에서 빠져나올 수 없는 멋진 순간들이 여러분을 기다립니다. 예약 및 정보 확인은 지금 바로!",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -635,7 +635,7 @@ func initHobba() {
 		},
 		Type:        STORE_TYPE_HOBBA,
 		Title:       "씨엔엔",
-		Description: "",
+		Description: "강남의 씨엔엔 호빠 클럽 소개 - 열정 넘치는 음악과 화려한 조명이 어우러진 강남의 최고급 클럽, 씨엔엔 호빠(CNN HOBBA). 트렌디한 분위기와 다채로운 이벤트로 즐거움 가득한 밤을 만끽하세요. VIP 서비스부터 다양한 DJ 공연까지, 강남의 끝없는 밤을 씨엔엔 호빠와 함께하세요.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
