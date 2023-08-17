@@ -34,17 +34,17 @@ func date(year, month, day int) time.Time {
 
 func Init() {
 	c := &config{}
-	c.Port = uint32(8000)
-	c.Domain = "domain.com"
-	c.Author = "author"
-	c.Title = "title"
-	c.Description = "description"
-	k := Keywords([]string{"keyword1", "keyword2", "keyword3", "keyword4.."})
+	c.Port = uint32(8018)
+	c.Domain = "hamjayoung.com"
+	c.Author = "함자영"
+	c.Title = "함자영의 강남룸빵 대탐험"
+	c.Description = "함자영실장이 소개하는 강남지역 모든 룸빵의 가격, 시스템, 위치정보 안내. 가라오케, 셔츠룸, 하이퍼블릭, 레깅스룸, 쩜오, 호빠, 클럽의 모든 정보"
+	k := Keywords([]string{"함자영의 강남룸빵 대탐험", "함자영실장", "강남룸빵", "룸빵", "가라오케", "셔츠룸", "하이퍼블릭", "레깅스룸", "쩜오", "호빠", "클럽"})
 	c.Keywords = &k
-	c.DatePublished = date(2023, 8, 5)
-	c.DateModified = date(2023, 8, 5)
+	c.DatePublished = date(2023, 8, 17)
+	c.DateModified = date(2023, 8, 17)
 	// 업종마다 전화번호가 다른경우 store/store.go 파일의 setPhoneNumber 함수에서 하드코딩
-	c.PhoneNumber = "010-1234-1234"
+	c.PhoneNumber = "010-2781-9627"
 	c.SearchEngineConnection = &searchEngineConnection{
 		Google: "GOOGLE_SITE_VERIFICATION",
 	}
