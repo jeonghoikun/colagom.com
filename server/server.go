@@ -8,7 +8,7 @@ import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/compress"
 	"github.com/gofiber/template/html/v2"
-	"github.com/jeonghoikun/webserver/site"
+	"github.com/jeonghoikun/hamjayoung.com/site"
 )
 
 type port uint32
