@@ -68,6 +68,38 @@ type Active struct {
 	Reason string
 }
 
+type TimeType struct {
+	// Has: 유무
+	Has bool
+	// Open: 오픈시간. ex) 18:00
+	Open string
+	// Closed: 마감시간. ex) 00:00
+	Closed string
+}
+
+type Hour struct {
+	// Part1: 1부
+	Part1 *TimeType
+	// Part2: 2부
+	Part2 *TimeType
+}
+
+type MenuItem struct {
+	Name  string
+	Price int
+}
+
+type Menu struct {
+	// Part1Whisky: 1부 주대
+	Part1Whisky *MenuItem
+	// Part2Whisky: 2부 주대
+	Part2Whisky *MenuItem
+	// TC: 아가씨 티시
+	TC *MenuItem
+	// RT: 룸비
+	RT *MenuItem
+}
+
 type Store struct {
 	Location *Location
 	// Type: 업종 하드코딩
@@ -80,6 +112,10 @@ type Store struct {
 	Keywords Keywords
 	// Active: 영업, 폐업 유무와 폐업사유 하드코딩
 	Active *Active
+	// Hour: 영업시간 하드코딩
+	Hour *Hour
+	// Price: 가격 하드코딩
+	Menu *Menu
 	// PhoneNumber: 하드코딩 X.
 	PhoneNumber string
 	// 생성일
@@ -92,44 +128,102 @@ func storeDate(year, month, day int) time.Time {
 	return time.Date(year, time.Month(month), day, 0, 0, 0, 0, time.Local)
 }
 
+func initKaraoke() {
+	stores = append(stores, &Store{
+		Location: &Location{
+			Do:           "서울",
+			Si:           "강남구",
+			Dong:         "논현동",
+			Address:      "151-30",
+			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.8479106529085!2d127.03145169999998!3d37.5115051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3f05b7c4407%3A0xbb44e0b5425b8a89!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDrhbztmITrj5kgMTUxLTMw!5e0!3m2!1sko!2skr!4v1660745693771!5m2!1sko!2skr",
+		},
+		Type:        STORE_TYPE_KARAOKE,
+		Title:       "퍼펙트",
+		Description: "",
+		Active: &Active{
+			IsPermanentClosed: false,
+			Reason:            "",
+		},
+		Hour: &Hour{
+			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
+			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
+		},
+		Menu:          &Menu{Part1Whisky: 350000, Part2Whisky: 160000, TC: 120000, RT: 50000},
+		DatePublished: storeDate(2023, 8, 10),
+		DateModified:  storeDate(2023, 8, 10),
+	})
+}
+
 func initHighPublic() {
 	stores = append(stores, &Store{
 		Location: &Location{
 			Do:           "서울",
 			Si:           "강남구",
 			Dong:         "역삼동",
-			Address:      "822-5",
-			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.3849794120856!2d127.02926860000001!3d37.4988373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca159d7d08f47%3A0x19ac7457d361928!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDthYztl6TrnoDroZwgMTEx!5e0!3m2!1sko!2skr!4v1661153125692!5m2!1sko!2skr",
+			Address:      "604-7",
+			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.088372324827!2d127.0311099!3d37.5058338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3fb63865cd7%3A0x31427b556da83644!2s604-7%20Yeoksam-dong%2C%20Gangnam-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1662056274810!5m2!1sen!2skr",
 		},
 		Type:        STORE_TYPE_HIGHPUBLIC,
-		Title:       "메이커",
-		Description: "메이커 is ...",
+		Title:       "달토",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
 		},
-		DatePublished: storeDate(2023, 8, 5),
-		DateModified:  storeDate(2023, 8, 5),
+		Hour: &Hour{
+			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
+			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
+		},
+		Menu:          &Menu{Part1Whisky: 170000, Part2Whisky: 140000, TC: 110000, RT: 50000},
+		DatePublished: storeDate(2023, 8, 10),
+		DateModified:  storeDate(2023, 8, 10),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
 			Do:           "서울",
 			Si:           "강남구",
 			Dong:         "역삼동",
-			Address:      "822-5",
-			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.3849794120856!2d127.02926860000001!3d37.4988373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca159d7d08f47%3A0x19ac7457d361928!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDthYztl6TrnoDroZwgMTEx!5e0!3m2!1sko!2skr!4v1661153125692!5m2!1sko!2skr",
+			Address:      "831-42",
+			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.6005044881886!2d127.03146729999997!3d37.4937527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca15057aba5c3%3A0x3c39e1c32ad3bd0f!2s831-42%20Yeoksam-dong%2C%20Gangnam-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1665731145337!5m2!1sen!2skr",
 		},
 		Type:        STORE_TYPE_HIGHPUBLIC,
-		Title:       "메이커2",
-		Description: "메이커2 is ...",
+		Title:       "트렌드",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
 		},
-		DatePublished: storeDate(2023, 8, 5),
-		DateModified:  storeDate(2023, 8, 5),
+		Hour: &Hour{
+			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
+			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
+		},
+		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 110000, RT: 50000},
+		DatePublished: storeDate(2023, 8, 11),
+		DateModified:  storeDate(2023, 8, 11),
 	})
-	// ..
+	stores = append(stores, &Store{
+		Location: &Location{
+			Do:           "서울",
+			Si:           "강남구",
+			Dong:         "대치동",
+			Address:      "890-38",
+			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.150656732908!2d127.05328440000001!3d37.504364699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca41055280155%3A0xc6516a6b77ef70c1!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDrjIDsuZjrj5kgODkwLTM4!5e0!3m2!1sko!2skr!4v1660489421580!5m2!1sko!2skr",
+		},
+		Type:        STORE_TYPE_HIGHPUBLIC,
+		Title:       "사라있네",
+		Description: "",
+		Active: &Active{
+			IsPermanentClosed: false,
+			Reason:            "",
+		},
+		Hour: &Hour{
+			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
+			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
+		},
+		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 110000, RT: 50000},
+		DatePublished: storeDate(2023, 8, 11),
+		DateModified:  storeDate(2023, 8, 11),
+	})
 }
 
 func setStoreKeywords() {
@@ -207,6 +301,7 @@ func createStaticImgDirectories() error {
 }
 
 func Init() error {
+	initKaraoke()
 	initHighPublic()
 	// initShirtRoom()
 	// initHobba()
