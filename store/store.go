@@ -702,7 +702,6 @@ func createHTMLFiles() error {
 		filepath := fmt.Sprintf("views/store/%s/%s/%s/%s/%s.html",
 			s.Location.Do, s.Location.Si, s.Location.Dong, s.Type, s.Title)
 		if _, err := os.Stat(filepath); err == nil {
-			fmt.Println(err)
 			continue
 		}
 		if err := os.WriteFile(filepath, []byte("write me!"), os.ModePerm); err != nil {
