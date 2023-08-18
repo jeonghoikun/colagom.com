@@ -1,3 +1,32 @@
-<footer>
-	footer
+<footer class="border-t border-stone-500 my-20">
+	<div>
+		<div>
+			
+		</div>
+		<div>
+
+		</div>
+	</div>
+	<div class="container mx-auto space-y-6 p-6">
+		<div>
+			<div>
+				<a class="text-stone-200 font-semibold hover:underline" href="/">{{.Site.Config.Title}}</a>
+			</div>
+			<div class="mt-3 text-sm space-y-3">
+				<div>
+					<span class="inline-block font-semibold w-[55px] mr-1">Author</span>
+					<span>{{.Site.Config.Author}}</span>
+				</div>
+				<div>
+					<span class="inline-block font-semibold w-[55px] mr-1">Contact</span>
+					<a href="tel:{{.Site.Config.PhoneNumber}}">{{.Site.Config.PhoneNumber}}</a>
+				</div>
+				<div>
+					<span class="inline-block font-semibold w-[55px] mr-1">Hosting</span>
+					<span>Asia/Seoul EC2 AWS(Amazon Web Service)</span>
+				</div>
+			</div>
+		</div>
+		<div class="text-sm text-stone-500 text-center">Copyright © {{Time.Format "2006"}} {{.Site.Config.Title}}. All rights reserved.</div>
+	</div>
 </footer>
