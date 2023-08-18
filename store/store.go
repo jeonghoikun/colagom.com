@@ -44,6 +44,38 @@ func ListStoresByDoSiAndStoreType(do, si, storeType string) []*Store {
 	return list
 }
 
+type Category struct {
+	Name   string
+	Stores []*Store
+}
+
+func ListAllCategories() []*Category {
+	list := []*Category{}
+	for _, s := range ListAllStores() {
+		ok := false
+		for _, c := range list {
+			if s.Type == c.Name {
+				ok = true
+				break
+			}
+		}
+		if !ok {
+			list = append(list, &Category{
+				Name:   s.Type,
+				Stores: []*Store{s},
+			})
+			continue
+		}
+		for _, c := range list {
+			if s.Type == c.Name {
+				c.Stores = append(c.Stores, s)
+			}
+		}
+	}
+	sort.Slice(list, func(i, j int) bool { return list[i].Name < list[j].Name })
+	return list
+}
+
 type Location struct {
 	// Do: ex) 서울
 	Do string
