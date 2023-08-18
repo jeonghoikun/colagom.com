@@ -17,10 +17,10 @@
 		</div>
 		<div class="mt-3">
 			<nav>
-				<ul class="w-fit mx-auto space-x-3 space-y-3 text-center text-sm border border-stone-500 rounded-md px-3 pb-3">
+				<ul class="w-fit mx-auto space-x-3 space-y-3 text-center text-sm font-semibold border border-stone-500 rounded-md px-3 pb-3">
 					{{range .Site.Store.Categories}}
 					<li class="inline-block">
-						<a class="hover:underline" href="/category/서울/강남/{{.Name}}">{{.Name}}({{len .Stores}})</a>
+						<a class="hover:underline" href="/category/서울/강남구/{{.Name}}">{{.Name}}({{len .Stores}})</a>
 					</li>
 					{{end}}
 				</ul>
