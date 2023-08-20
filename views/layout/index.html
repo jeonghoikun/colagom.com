@@ -4,6 +4,7 @@
 	{{template "components/head/browser"}}
 	{{template "components/head/seo" .}}
 	{{template "components/head/styles"}}
+	{{template "components/head/scripts"}}
 </head>
 <body class="antialiased bg-stone-900 text-gray-300">
 	<header class="container mx-auto p-6">
@@ -17,7 +18,7 @@
 		</div>
 		<div class="mt-3">
 			<nav>
-				<ul class="w-fit mx-auto space-x-3 space-y-3 text-center text-sm font-semibold border border-stone-500 rounded-md px-3 pb-3">
+				<ul class="w-fit mx-auto space-x-3 space-y-3 text-center text-sm font-semibold border border-stone-500 rounded-md px-3 pb-3 bg-stone-900">
 					{{range .Site.Store.Categories}}
 					<li class="inline-block">
 						<a class="hover:underline" href="/category/서울/강남구/{{.Name}}">{{.Name}}({{len .Stores}})</a>
@@ -27,13 +28,16 @@
 			</nav>
 		</div>
 	</header>
-	<aside class="container mx-auto">
+	<aside class="container mx-auto relative">
 		<div class="w-fit mx-auto px-6">
 			<img class="block w-[200px] rounded-full" src="/static/img/site/author/profile.png" alt="{{.Site.Config.Author}} 프로필">
-			<div class="text-center text-sm font-semibold mt-3 space-y-1">
+			<div class="text-center text-sm font-semibold mt-3 space-y-1 bg-stone-900">
 				<div>{{.Site.Config.Author}} 실장</div>
 				<a class="inline-block w-fit text-sky-400 hover:text-sky-300 hover:underline" href="tel:{{.Site.Config.PhoneNumber}}">{{.Site.Config.PhoneNumber}}</a>
 			</div>
+		</div>
+		<div class="absolute left-0 top-0 -z-10 h-full w-full w-fit mx-auto scale-150">
+			<lottie-player class="w-full opacity-80" src="https://lottie.host/568271cf-787f-43bd-bb7c-a8dcb3e3f68a/vdyiETr9JX.json" speed="1" loop autoplay direction="1" mode="normal"></lottie-player>
 		</div>
 	</aside>
 	<main class="container mx-auto">{{embed}}</main>
