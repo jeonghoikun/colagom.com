@@ -27,6 +27,15 @@
 			</nav>
 		</div>
 	</header>
+	<aside class="container mx-auto">
+		<div class="w-fit mx-auto px-6">
+			<img class="block w-[200px] rounded-full" src="/static/img/site/author/profile.png" alt="{{.Site.Config.Author}} 프로필">
+			<div class="text-center text-sm font-semibold mt-3 space-y-1">
+				<div>{{.Site.Config.Author}} 실장</div>
+				<a class="inline-block w-fit text-sky-400 hover:text-sky-300 hover:underline" href="tel:{{.Site.Config.PhoneNumber}}">{{.Site.Config.PhoneNumber}}</a>
+			</div>
+		</div>
+	</aside>
 	<main class="container mx-auto">{{embed}}</main>
 	{{template "components/footer/global" .}}
 </body>
