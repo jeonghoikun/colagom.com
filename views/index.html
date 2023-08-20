@@ -23,8 +23,10 @@
 				<a class="text-lg font-semibold" href="/category/서울/강남구/{{.Name}}">{{.Name}}({{len .Stores}})</a>
 				<span>»</span>
 			</h2>
-			<ul class="mt-6">
-				<li>{{.}}</li>
+			<ul class="mt-6 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+				{{range .Stores}}
+				<li>{{template "components/store/card" .}}</li>
+				{{end}}
 			</ul>
 		</div>
 		{{end}}
