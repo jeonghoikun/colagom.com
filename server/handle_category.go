@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net/http"
 	"net/url"
+	"sort"
 	"strings"
 
 	"github.com/gofiber/fiber/v2"
@@ -28,10 +29,17 @@ func (*categoryHandler) listPage(c *fiber.Ctx) error {
 		return c.Status(http.StatusBadRequest).SendString(err.Error())
 	}
 	listStores := store.ListStoresByDoSiAndStoreType(do, si, storeType)
+	if len(listStores) == 0 {
+		return c.Status(http.StatusNotFound).SendString("카테고리가 존재하지 않습니다")
+	}
+	sort.Slice(listStores, func(i, j int) bool {
+		return listStores[i].DatePublished.UnixNano() > listStores[j].DatePublished.UnixNano()
+	})
 	var storeNames []string
 	for _, s := range listStores {
 		storeNames = append(storeNames, s.Title)
 	}
+	si = strings.Replace(si, "구", "", -1)
 	m := fiber.Map{}
 	m["Page"] = &PageConfig{
 		Path: c.Path(),
@@ -51,6 +59,8 @@ func (*categoryHandler) listPage(c *fiber.Ctx) error {
 		DateModified:  site.Config.DateModified,
 		ThumbnailPath: "/static/img/site/thumbnail/thumb.png",
 	}
+	m["Profile"] = map[string]string{"PhoneNumber": listStores[0].PhoneNumber}
+	m["Breadcrumbs"] = map[string]string{"StoreType": listStores[0].Type}
 	m["Stores"] = listStores
 	return c.Status(http.StatusOK).Render("category/index", m, "layout/category")
 }

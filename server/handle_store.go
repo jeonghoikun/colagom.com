@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net/http"
 	"net/url"
+	"strings"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/jeonghoikun/hamjayoung.com/site"
@@ -38,6 +39,7 @@ func (*storeHandler) page(c *fiber.Ctx) error {
 	if !has {
 		return c.Status(http.StatusNotFound).SendString("Store not found")
 	}
+	si = strings.Replace(si, "구", "", -1)
 	m := fiber.Map{
 		"Page": &PageConfig{
 			Path: c.Path(),
@@ -45,7 +47,7 @@ func (*storeHandler) page(c *fiber.Ctx) error {
 				Name:        site.Config.Author,
 				ProfilePath: "/static/img/site/author/profile.png",
 			},
-			Title:         fmt.Sprintf("%s %s %s %s", store.Location.Do, store.Location.Si, store.Title, store.Type),
+			Title:         fmt.Sprintf("%s %s %s %s", store.Location.Do, si, store.Title, store.Type),
 			Description:   store.Description,
 			Keywords:      store.Keywords.String(),
 			PhoneNumber:   store.PhoneNumber,
@@ -53,6 +55,9 @@ func (*storeHandler) page(c *fiber.Ctx) error {
 			DateModified:  store.DateModified,
 			ThumbnailPath: fmt.Sprintf("/static/img/store/%s/%s/%s/%s/%s/thumbnail.png",
 				store.Location.Do, store.Location.Si, store.Location.Dong, store.Type, store.Title),
+		},
+		"Profile": map[string]string{
+			"PhoneNumber": store.PhoneNumber,
 		},
 		"Store": store,
 	}

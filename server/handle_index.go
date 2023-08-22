@@ -31,6 +31,9 @@ func (*indexHandler) index(c *fiber.Ctx) error {
 			DateModified:  site.Config.DateModified,
 			ThumbnailPath: "/static/img/site/thumbnail/thumb.png",
 		},
+		"Profile": map[string]string{
+			"PhoneNumber": site.Config.PhoneNumber,
+		},
 	}
 	return c.Status(http.StatusOK).Render("index", m, "layout/index")
 }

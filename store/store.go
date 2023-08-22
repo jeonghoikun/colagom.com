@@ -349,8 +349,8 @@ func initDot5() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
-		DatePublished: storeDate(2023, 8, 14),
-		DateModified:  storeDate(2023, 8, 14),
+		DatePublished: storeDate(2023, 8, 11),
+		DateModified:  storeDate(2023, 8, 11),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -372,8 +372,8 @@ func initDot5() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
-		DatePublished: storeDate(2023, 8, 14),
-		DateModified:  storeDate(2023, 8, 14),
+		DatePublished: storeDate(2023, 8, 12),
+		DateModified:  storeDate(2023, 8, 12),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -395,8 +395,8 @@ func initDot5() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
-		DatePublished: storeDate(2023, 8, 14),
-		DateModified:  storeDate(2023, 8, 14),
+		DatePublished: storeDate(2023, 8, 13),
+		DateModified:  storeDate(2023, 8, 13),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -545,8 +545,8 @@ func initDot5() {
 			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.429128349951!2d127.03037690000001!3d37.4977958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1576a139921%3A0xda0428a0d46a18b2!2s824-7%20Yeoksam-dong%2C%20Gangnam-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1676634190100!5m2!1sen!2skr",
 		},
 		Type:        STORE_TYPE_DOT5,
-		Title:       "우체통",
-		Description: "강남 우체통 쩜오 - 강남지역 유흥주점 정보와 다양한 놀거리를 제공하는 플랫폼입니다. 강남의 핫한 클럽, 바, 라운지 등 다양한 엔터테인먼트 장소 정보를 확인하고 즐거운 시간을 보내세요!",
+		Title:       "스테이",
+		Description: "강남 스테이 쩜오 - 강남지역 유흥주점 정보와 다양한 놀거리를 제공하는 플랫폼입니다. 강남의 핫한 클럽, 바, 라운지 등 다양한 엔터테인먼트 장소 정보를 확인하고 즐거운 시간을 보내세요!",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",

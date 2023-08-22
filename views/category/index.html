@@ -1,13 +1,15 @@
-<section>
-	<div>데이터 Struct 참고: store/store.go</div>
-	<ul class="space-y-3 mt-6">
-		{{range .Stores}}
-			<li>
-				<h3>{{.Title}}</h3>
-				<div>{{.}}</div>
-			</li>
-		{{else}}
+<section class="mt-10">
+	<div class="px-6 mt-6 mb-10 w-fit mx-auto text-center">
+		<h1 class="font-semibold text-stone-200 text-2xl">{{.Page.Title}}</h1>
+		<p class="mt-6 font-semibold">{{.Page.Description}}</p>
+	</div>
+	<div class="px-6">
+		<ul class="mt-6 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 space-y-3 sm:space-y-0 sm:gap-3">
+			{{range .Stores}}
+			<li>{{template "components/store/card" .}}</li>
+			{{else}}
 			<p>데이터가 없습니다</p>
-		{{end}}
-	</ul>
+			{{end}}
+		</ul>
+	</div>
 </section>
