@@ -151,6 +151,8 @@ type Store struct {
 	DateModified time.Time
 }
 
+func (s *Store) IsModified() bool { return s.DatePublished.UnixNano() != s.DateModified.UnixNano() }
+
 func storeDate(year, month, day int) time.Time {
 	return time.Date(year, time.Month(month), day, 0, 0, 0, 0, time.Local)
 }

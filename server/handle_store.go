@@ -40,6 +40,12 @@ func (*storeHandler) page(c *fiber.Ctx) error {
 		return c.Status(http.StatusNotFound).SendString("Store not found")
 	}
 	si = strings.Replace(si, "구", "", -1)
+	title := fmt.Sprintf("%s %s %s %s", store.Location.Do, si, store.Title, store.Type)
+	if store.Active.IsPermanentClosed {
+		title += fmt.Sprintf(" (폐업: %s)", store.Active.Reason)
+	} else {
+		title += " (영업중)"
+	}
 	m := fiber.Map{
 		"Page": &PageConfig{
 			Path: c.Path(),
@@ -47,7 +53,7 @@ func (*storeHandler) page(c *fiber.Ctx) error {
 				Name:        site.Config.Author,
 				ProfilePath: "/static/img/site/author/profile.png",
 			},
-			Title:         fmt.Sprintf("%s %s %s %s", store.Location.Do, si, store.Title, store.Type),
+			Title:         title,
 			Description:   store.Description,
 			Keywords:      store.Keywords.String(),
 			PhoneNumber:   store.PhoneNumber,
@@ -59,7 +65,8 @@ func (*storeHandler) page(c *fiber.Ctx) error {
 		"Profile": map[string]string{
 			"PhoneNumber": store.PhoneNumber,
 		},
-		"Store": store,
+		"Store":  store,
+		"SiMini": si,
 	}
 	embedFilePath := fmt.Sprintf("store/%s/%s/%s/%s/%s",
 		store.Location.Do, store.Location.Si, store.Location.Dong, store.Type, store.Title)

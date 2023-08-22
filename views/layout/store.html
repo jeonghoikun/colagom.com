@@ -19,19 +19,73 @@
 		</div>
 	</div>
 	<main class="container mx-auto mt-10 space-y-10">
-		<section class="px-6">
-			<div class="w-fit mx-auto">
+		<section>
+			<div class="px-6">
 				<h1 class="text-2xl font-semibold text-stone-100">{{.Page.Title}}</h1>
+				<div class="mt-3 text-sm text-stone-500">발행: {{.Store.DatePublished.Format "2006/01/02"}}</div>
+				{{if .Store.IsModified}}
+				<div class="mt-1 text-sm text-stone-500">폐업: {{.Store.DateModified.Format "2006/01/02"}}</div>
+				{{end}}
 				<p class="mt-3 text-sm">{{.Page.Description}}</p>
 			</div>
-			<div class="mt-6">
-				<img class="object-cover object-center w-full h-full" src="/static/img/store/{{.Store.Location.Do}}/{{.Store.Location.Si}}/{{.Store.Location.Dong}}/{{.Store.Type}}/{{.Store.Title}}/thumbnail.png" alt="{{.Store.Location.Si}}/{{.Store.Location.Dong}}/{{.Store.Type}}/{{.Store.Title}} 썸네일">
+			<div class="mt-6 sm:px-6 relative">
+				<img class="object-cover object-center w-full h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] brightness-50" src="/static/img/store/{{.Store.Location.Do}}/{{.Store.Location.Si}}/{{.Store.Location.Dong}}/{{.Store.Type}}/{{.Store.Title}}/thumbnail.png" alt="{{.Store.Location.Si}}/{{.Store.Location.Dong}}/{{.Store.Type}}/{{.Store.Title}} 썸네일">
+				<div class="absolute inset-0 flex items-center justify-center text-2xl font-semibold px-6">
+					<div class="backdrop-blur bg-black/20 px-6 py-3 rounded-md">
+						{{if .Store.Active.IsPermanentClosed}}
+						<div class="text-red-300">폐업({{.Store.Active.Reason}})</div>
+						{{else}}
+						<div class="text-blue-300">영업중</div>
+						{{end}}
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="px-6">
+				<h2 class="text-xl font-semibold text-stone-200">🔍 {{.SiMini}} {{.Store.Title}} {{.Store.Type}} 기본 정보</h2>
+				<div class="mt-3 py-10 shadow-sm shadow-black rounded-xl border border-stone-700/50">
+					<table class="table-auto border-collapse w-full border-y border-stone-500/60 text-sm">
+						<tr class="border-b border-stone-500/40">
+							<th class="border-r border-stone-500/80 p-4">상태</th>
+							{{if .Store.Active.IsPermanentClosed}}
+							<td class="px-3 bg-stone-800 text-red-300">폐업: {{.Store.Active.Reason}}</td>
+							{{else}}
+							<td class="px-3 bg-stone-800 text-blue-300">영업중</td>
+							{{end}}
+						</tr>
+						<tr class="border-b border-stone-500/40">
+							<th class="border-r border-stone-500/80 p-4">도시</th>
+							<td class="px-3 bg-stone-800">{{.Store.Location.Do}}</td>
+						</tr>
+						<tr class="border-b border-stone-500/40">
+							<th class="border-r border-stone-500/80 p-4">지역1</th>
+							<td class="px-3 bg-stone-800">{{.Store.Location.Si}}</td>
+						</tr>
+						<tr class="border-b border-stone-500/40">
+							<th class="border-r border-stone-500/80 p-4">지역2</th>
+							<td class="px-3 bg-stone-800">{{.Store.Location.Dong}}</td>
+						</tr>
+						<tr class="border-b border-stone-500/40">
+							<th class="border-r border-stone-500/80 p-4">지번</th>
+							<td class="px-3 bg-stone-800">{{.Store.Location.Address}}</td>
+						</tr>
+						<tr class="border-b border-stone-500/40">
+							<th class="border-r border-stone-500/80 p-4">업종</th>
+							<td class="px-3 bg-stone-800">{{.Store.Type}}</td>
+						</tr>
+						<tr>
+							<th class="border-r border-stone-500/80 p-4">상호</th>
+							<td class="px-3 bg-stone-800">{{.Store.Title}}</td>
+						</tr>
+					</table>
+				</div>
 			</div>
 		</section>
 		<article>{{embed}}</article>
 	</main>
-	<aside class="fixed bottom-0 right-0">
-		<a href="tel:{{.Store.PhoneNumber}}">전화</a>
+	<aside class="fixed bottom-0 right-0 mb-6 mr-3 container mx-auto w-fit">
+		<a class="block px-4 py-2 text-xs bg-violet-200 rounded-md text-stone-900 font-semibold" href="tel:{{.Store.PhoneNumber}}">전화 연결</a>
 	</aside>
 	{{template "components/footer/global" .}}
 </body>
