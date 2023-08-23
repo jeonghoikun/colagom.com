@@ -3,6 +3,7 @@ module github.com/jeonghoikun/hamjayoung.com
 go 1.19
 
 require (
+	github.com/dustin/go-humanize v1.0.1
 	github.com/gofiber/fiber/v2 v2.48.0
 	github.com/gofiber/template/html/v2 v2.0.5
 )

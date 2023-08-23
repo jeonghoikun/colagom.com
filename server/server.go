@@ -5,6 +5,7 @@ import (
 	"math/rand"
 	"time"
 
+	"github.com/dustin/go-humanize"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/compress"
 	"github.com/gofiber/template/html/v2"
@@ -34,6 +35,27 @@ func (*engineFunc) randFileNumber() int {
 	return rand.Intn(max-min) + min
 }
 
+func (*engineFunc) commaByPrice(prices ...int) string {
+	var n = 0
+	for _, p := range prices {
+		n += p
+	}
+	if n == 0 {
+		return "문의"
+	}
+	return humanize.Comma(int64(n))
+}
+
+func (*engineFunc) multiply(a, b int) int { return a * b }
+
+func (*engineFunc) listNumbers(ns ...int) []int {
+	list := []int{}
+	for _, n := range ns {
+		list = append(list, n)
+	}
+	return list
+}
+
 func engine() *html.Engine {
 	e := html.New("./views", ".html")
 	e.Reload(true)
@@ -41,6 +63,9 @@ func engine() *html.Engine {
 	e.AddFunc("Time", ef.time)
 	e.AddFunc("WithHost", ef.withHost)
 	e.AddFunc("RandFileNumber", ef.randFileNumber)
+	e.AddFunc("CommaByPrice", ef.commaByPrice)
+	e.AddFunc("Multiply", ef.multiply)
+	e.AddFunc("ListNumbers", ef.listNumbers)
 	return e
 }
 
