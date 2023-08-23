@@ -40,7 +40,7 @@ func (*storeHandler) page(c *fiber.Ctx) error {
 		return c.Status(http.StatusNotFound).SendString("Store not found")
 	}
 	si = strings.Replace(si, "구", "", -1)
-	title := fmt.Sprintf("%s %s %s %s", store.Location.Do, si, store.Title, store.Type)
+	title := fmt.Sprintf("%s %s %s", si, store.Title, store.Type)
 	if store.Active.IsPermanentClosed {
 		title += fmt.Sprintf(" (폐업: %s)", store.Active.Reason)
 	} else {
