@@ -73,6 +73,11 @@ func ListAllCategories() []*Category {
 		}
 	}
 	sort.Slice(list, func(i, j int) bool { return list[i].Name < list[j].Name })
+	for _, x := range list {
+		sort.Slice(x.Stores, func(i, j int) bool {
+			return x.Stores[i].DatePublished.UnixNano() > x.Stores[j].DatePublished.UnixNano()
+		})
+	}
 	return list
 }
 
@@ -301,6 +306,52 @@ func initHighPublic() {
 		Menu:          &Menu{Part1Whisky: 170000, Part2Whisky: 140000, TC: 110000, RT: 50000},
 		DatePublished: storeDate(2023, 8, 11),
 		DateModified:  storeDate(2023, 8, 11),
+	})
+	stores = append(stores, &Store{
+		Location: &Location{
+			Do:           "서울",
+			Si:           "강남구",
+			Dong:         "역삼동",
+			Address:      "822-5",
+			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.3849794120856!2d127.02926860000001!3d37.4988373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca159d7d08f47%3A0x19ac7457d361928!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDthYztl6TrnoDroZwgMTEx!5e0!3m2!1sko!2skr!4v1661153125692!5m2!1sko!2skr",
+		},
+		Type:        STORE_TYPE_HIGHPUBLIC,
+		Title:       "메이커",
+		Description: "강남 메이커 하이퍼블릭 - 환상적인 네온 조명 아래 숨겨진 세상. 이야기의 주인공은 강남의 유명한 유흥주점, 메이커 하이퍼블릭입니다. 현실과 환상이 어우러지는 이곳에서 벌어지는 다양한 이야기를 만나보세요. 빛과 어둠, 그리고 열정이 얽힌 감각적인 경험을 떠나보세요.",
+		Active: &Active{
+			IsPermanentClosed: false,
+			Reason:            "",
+		},
+		Hour: &Hour{
+			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
+			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
+		},
+		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 110000, RT: 50000},
+		DatePublished: storeDate(2023, 8, 25),
+		DateModified:  storeDate(2023, 8, 25),
+	})
+	stores = append(stores, &Store{
+		Location: &Location{
+			Do:           "서울",
+			Si:           "강남구",
+			Dong:         "삼성동",
+			Address:      "142-29",
+			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.0777556298026!2d127.04878313939513!3d37.50608421069179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca411c1921beb%3A0x7c77ea8a217f86a3!2s142-29%20Samseong-dong%2C%20Gangnam-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1667050924490!5m2!1sen!2skr",
+		},
+		Type:        STORE_TYPE_HIGHPUBLIC,
+		Title:       "파티",
+		Description: "강남 파티 하이퍼블릭 – 화려한 라이트와 음악, 열정 넘치는 파티 분위기가 만나는 강남의 프리미어 유흥주점. 다채로운 이벤트와 특별한 DJ 공연으로 당신의 밤을 환상적인 경험으로 채워줄 최적의 장소. 친구들과 함께하는 흥겨운 밤을 강력한 비트와 함께 누려보세요.",
+		Active: &Active{
+			IsPermanentClosed: false,
+			Reason:            "",
+		},
+		Hour: &Hour{
+			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
+			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
+		},
+		Menu:          &Menu{Part1Whisky: 210000, Part2Whisky: 140000, TC: 110000, RT: 50000},
+		DatePublished: storeDate(2023, 8, 25),
+		DateModified:  storeDate(2023, 8, 25),
 	})
 }
 
