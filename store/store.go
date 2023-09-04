@@ -353,6 +353,29 @@ func initHighPublic() {
 		DatePublished: storeDate(2023, 8, 25),
 		DateModified:  storeDate(2023, 8, 25),
 	})
+	stores = append(stores, &Store{
+		Location: &Location{
+			Do:           "서울",
+			Si:           "강남구",
+			Dong:         "역삼동",
+			Address:      "823-30",
+			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.4051104401256!2d127.03307020000001!3d37.4983624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1565c22d639%3A0x1fcb22298cd33520!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDsl63sgrzrj5kgODIzLTMw!5e0!3m2!1sko!2skr!4v1693829638202!5m2!1sko!2skr",
+		},
+		Type:        STORE_TYPE_HIGHPUBLIC,
+		Title:       "수목원",
+		Description: "강남 수목원 하이퍼블릭 – 강남 지역의 현대적이고 화려한 유흥주점 중 하나로, 낮과 밤을 아름다운 풍경과 즐거운 분위기에서 즐길 수 있는 곳입니다. 이 곳은 아름다운 조명과 세련된 인테리어로 꾸며져 있어 파티나 모임에 최적의 장소로 알려져 있습니다. 강남 수목원 하이퍼블릭은 다양한 음료 메뉴와 칵테일을 제공하며, 특별한 이벤트와 라이브 음악 퍼포먼스로 방문객들에게 즐거운 시간을 선사합니다. 또한, 유명한 DJ들의 공연과 다양한 주제의 파티가 자주 열리며, 강남의 밤을 더욱 화려하게 만들어 줍니다. 강남 수목원 하이퍼블릭은 지역 주민과 관광객 모두에게 재미와 흥미로운 경험을 제공하는 장소로, 현지 문화와 엔터테인먼트를 즐기기에 최적의 선택 중 하나입니다.",
+		Active: &Active{
+			IsPermanentClosed: false,
+			Reason:            "",
+		},
+		Hour: &Hour{
+			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
+			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
+		},
+		Menu:          &Menu{Part1Whisky: 250000, Part2Whisky: 0, TC: 130000, RT: 50000},
+		DatePublished: storeDate(2023, 9, 03),
+		DateModified:  storeDate(2023, 9, 03),
+	})
 }
 
 func initLeggingsRoom() {
