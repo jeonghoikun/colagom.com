@@ -1036,12 +1036,14 @@ video {
 
 .bg-stone-800{
   --tw-bg-opacity: 1;
-  background-color: rgb(41 37 36 / var(--tw-bg-opacity));
+  /* background-color: rgb(41 37 36 / var(--tw-bg-opacity)); */
+  background-color: rgb(100 37 36 / var(--tw-bg-opacity));
 }
 
 .bg-stone-900{
   --tw-bg-opacity: 1;
-  background-color: rgb(28 25 23 / var(--tw-bg-opacity));
+  /* background-color: rgb(28 25 23 / var(--tw-bg-opacity)); */
+  background-color: rgb(130 25 23 / var(--tw-bg-opacity));
 }
 
 .bg-violet-200{

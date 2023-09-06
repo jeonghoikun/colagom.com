@@ -8,8 +8,8 @@ import (
 	"strings"
 
 	"github.com/gofiber/fiber/v2"
-	"github.com/jeonghoikun/hamjayoung.com/site"
-	"github.com/jeonghoikun/hamjayoung.com/store"
+	"github.com/jeonghoikun/colagom.com/site"
+	"github.com/jeonghoikun/colagom.com/store"
 )
 
 type categoryHandler struct{}

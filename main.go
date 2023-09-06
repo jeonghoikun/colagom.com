@@ -4,9 +4,9 @@ import (
 	"log"
 	"time"
 
-	"github.com/jeonghoikun/hamjayoung.com/server"
-	"github.com/jeonghoikun/hamjayoung.com/site"
-	"github.com/jeonghoikun/hamjayoung.com/store"
+	"github.com/jeonghoikun/colagom.com/server"
+	"github.com/jeonghoikun/colagom.com/site"
+	"github.com/jeonghoikun/colagom.com/store"
 )
 
 func init() {

@@ -34,15 +34,15 @@ func date(year, month, day int) time.Time {
 
 func Init() {
 	c := &config{}
-	c.Port = uint32(8018)
-	c.Domain = "hamjayoung.com"
-	c.Author = "함자영"
-	c.Title = "함자영의 강남룸빵 대탐험"
-	c.Description = "함자영실장이 소개하는 강남지역 모든 룸빵의 가격, 시스템, 위치정보 안내. 가라오케, 셔츠룸, 하이퍼블릭, 레깅스룸, 쩜오, 호빠, 클럽의 모든 정보"
-	k := Keywords([]string{"함자영의 강남룸빵 대탐험", "함자영실장", "강남룸빵", "룸빵", "가라오케", "셔츠룸", "하이퍼블릭", "레깅스룸", "쩜오", "호빠", "클럽"})
+	c.Port = uint32(8019)
+	c.Domain = "colagom.com"
+	c.Author = "콜라곰"
+	c.Title = "콜라곰의 강남유흥 여행"
+	c.Description = "콜라곰과 함께 떠나는 강남의 유흥주점의 가격, 시스템, 위치정보 안내. 가라오케, 셔츠룸, 하이퍼블릭, 레깅스룸, 쩜오, 호빠, 클럽의 모든 정보소"
+	k := Keywords([]string{"콜라곰의 강남유흥 여행", "콜라곰", "강남유흥", "유흥", "유흥주점", "강남유흥주점", "강남룸빵", "룸빵", "가라오케", "셔츠룸", "하이퍼블릭", "레깅스룸", "쩜오", "호빠", "클럽"})
 	c.Keywords = &k
-	c.DatePublished = date(2023, 8, 10)
-	c.DateModified = date(2023, 8, 10)
+	c.DatePublished = date(2023, 9, 6)
+	c.DateModified = date(2023, 9, 6)
 	// 업종마다 전화번호가 다른경우 store/store.go 파일의 setPhoneNumber 함수에서 하드코딩
 	c.PhoneNumber = "010-2781-9627"
 	c.SearchEngineConnection = &searchEngineConnection{

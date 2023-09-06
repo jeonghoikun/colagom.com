@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/jeonghoikun/hamjayoung.com/site"
+	"github.com/jeonghoikun/colagom.com/site"
 )
 
 const (
@@ -173,7 +173,7 @@ func initKaraoke() {
 		},
 		Type:        STORE_TYPE_KARAOKE,
 		Title:       "퍼펙트",
-		Description: "강남 퍼펙트 가라오케에서 최상의 음향 시스템과 다양한 노래 선택으로 당신의 노래 실력을 뽐내보세요. 편안하고 고품격한 분위기에서 친구들과 즐거운 노래 시간을 만끽해보세요. 강남 지역에서 가장 완벽한 가라오케 경험을 제공합니다.",
+		Description: "강남 퍼펙트 가라오케는 화려한 분위기와 최신 노래 라이브러리로 여러분을 미쳐하게 할 최고의 유흥주점입니다. 노래를 부르고 춤추며 즐기는 가라오케 무대에서 또래와 즐거운 시간을 보내보세요!",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -183,8 +183,8 @@ func initKaraoke() {
 			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
 		},
 		Menu:          &Menu{Part1Whisky: 350000, Part2Whisky: 160000, TC: 120000, RT: 50000},
-		DatePublished: storeDate(2023, 8, 12),
-		DateModified:  storeDate(2023, 8, 12),
+		DatePublished: storeDate(2023, 9, 5),
+		DateModified:  storeDate(2023, 9, 5),
 	})
 }
 
@@ -199,7 +199,7 @@ func initShirtRoom() {
 		},
 		Type:        STORE_TYPE_SHIRTROOM,
 		Title:       "디씨",
-		Description: "강남 디씨 셔츠룸: 최상의 편안함과 품격을 누리며 특별한 시간을 보내세요. 다양한 스타일의 셔츠와 고급 편의시설로 편안한 공간에서 휴식과 레저를 만끽하세요. 강남의 럭셔리한 디씨 셔츠룸에서 특별한 순간을 함께하세요.",
+		Description: "강남 디씨 셔츠룸은 강남 지역의 유흥주점으로, 멋진 셔츠를 입고 즐기는 쇼와 엔터테인먼트를 제공하여 파티와 즐거운 시간을 보낼 수 있는 장소입니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -209,8 +209,8 @@ func initShirtRoom() {
 			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
 		},
 		Menu:          &Menu{Part1Whisky: 160000, Part2Whisky: 130000, TC: 120000, RT: 50000},
-		DatePublished: storeDate(2023, 8, 13),
-		DateModified:  storeDate(2023, 8, 13),
+		DatePublished: storeDate(2023, 9, 5),
+		DateModified:  storeDate(2023, 9, 5),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -222,7 +222,7 @@ func initShirtRoom() {
 		},
 		Type:        STORE_TYPE_SHIRTROOM,
 		Title:       "유앤미",
-		Description: "강남 유앤미 셔츠룸 - 최상의 서비스와 편안한 분위기로 당신의 특별한 순간을 즐기세요. 다양한 셔츠룸 테마와 고급 시설로 편안한 휴식과 함께 특별한 추억을 만들어보세요.",
+		Description: "강남 유앤미 셔츠룸은 화려한 강남 지역에서 즐길 수 있는 역동적인 유흥주점으로, 멋진 셔츠룸 경험과 다양한 엔터테인먼트 옵션을 제공합니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -232,8 +232,8 @@ func initShirtRoom() {
 			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
 		},
 		Menu:          &Menu{Part1Whisky: 160000, Part2Whisky: 130000, TC: 120000, RT: 50000},
-		DatePublished: storeDate(2023, 8, 13),
-		DateModified:  storeDate(2023, 8, 13),
+		DatePublished: storeDate(2023, 9, 5),
+		DateModified:  storeDate(2023, 9, 5),
 	})
 }
 
@@ -248,7 +248,7 @@ func initHighPublic() {
 		},
 		Type:        STORE_TYPE_HIGHPUBLIC,
 		Title:       "달토",
-		Description: "강남 달토 하이퍼블릭 주점 – 트렌디한 분위기와 다양한 음료 메뉴로 당신의 시간을 특별하게 채워드립니다. 감각적인 칵테일과 편안한 공간에서 지금 당신의 모든 감각을 만족시켜보세요. 강남에서의 눈부신 밤을 달콤하게 완성해드립니다.",
+		Description: "강남의 달토 하이퍼블릭은 화려한 밤문화와 다채로운 엔터테인먼트를 즐길 수 있는 유흥주점 지구로 유명한 곳으로, 현장에서 무한한 즐거움을 찾을 수 있습니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -258,8 +258,8 @@ func initHighPublic() {
 			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
 		},
 		Menu:          &Menu{Part1Whisky: 170000, Part2Whisky: 140000, TC: 110000, RT: 50000},
-		DatePublished: storeDate(2023, 8, 10),
-		DateModified:  storeDate(2023, 8, 10),
+		DatePublished: storeDate(2023, 9, 5),
+		DateModified:  storeDate(2023, 9, 5),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -271,18 +271,18 @@ func initHighPublic() {
 		},
 		Type:        STORE_TYPE_HIGHPUBLIC,
 		Title:       "트렌드",
-		Description: "",
+		Description: "강남 트렌드 하이퍼블릭은 강남 지역에서 최신 트렌드를 반영한 현대적인 유흥주점으로, 열정적인 무드와 다채로운 엔터테인먼트로 방문객들에게 특별한 경험을 제공합니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
-			Reason:            "강남 트렌드 하이퍼블릭. 최상의 서비스와 현대적인 분위기로 당신을 초대합니다. 다채로운 음료와 함께하는 흥겨운 밤을 만나보세요. 강남에서 트렌디한 놀이문화를 즐기는 새로운 방식을 경험하세요.",
+			Reason:            "",
 		},
 		Hour: &Hour{
 			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
 			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 110000, RT: 50000},
-		DatePublished: storeDate(2023, 8, 11),
-		DateModified:  storeDate(2023, 8, 11),
+		DatePublished: storeDate(2023, 9, 5),
+		DateModified:  storeDate(2023, 9, 5),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -294,7 +294,7 @@ func initHighPublic() {
 		},
 		Type:        STORE_TYPE_HIGHPUBLIC,
 		Title:       "사라있네",
-		Description: "강남 사라있네 하이퍼블릭 - 활기찬 강남의 유흥주점 문화를 만끽하세요. 다채로운 엔터테인먼트와 편안한 분위기가 어우러진 곳에서 특별한 순간을 누려보세요. 음악, 음료, 그리고 즐거움이 가득한 공간에서 즐거운 시간을 보내세요.",
+		Description: "강남 사라있네 하이퍼블릭은 서울 강남에서 유명한 유흥주점으로, 화려한 분위기와 다양한 엔터테인먼트 옵션을 제공하여 즐거운 밤을 보낼 수 있는 곳입니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -304,8 +304,8 @@ func initHighPublic() {
 			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
 		},
 		Menu:          &Menu{Part1Whisky: 170000, Part2Whisky: 140000, TC: 110000, RT: 50000},
-		DatePublished: storeDate(2023, 8, 11),
-		DateModified:  storeDate(2023, 8, 11),
+		DatePublished: storeDate(2023, 9, 5),
+		DateModified:  storeDate(2023, 9, 5),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -317,7 +317,7 @@ func initHighPublic() {
 		},
 		Type:        STORE_TYPE_HIGHPUBLIC,
 		Title:       "메이커",
-		Description: "강남 메이커 하이퍼블릭 - 환상적인 네온 조명 아래 숨겨진 세상. 이야기의 주인공은 강남의 유명한 유흥주점, 메이커 하이퍼블릭입니다. 현실과 환상이 어우러지는 이곳에서 벌어지는 다양한 이야기를 만나보세요. 빛과 어둠, 그리고 열정이 얽힌 감각적인 경험을 떠나보세요.",
+		Description: "강남 메이커 하이퍼블릭은 대한민국 서울의 강남 지역에서 유명한 유흥주점 중 하나입니다. 이 곳은 강남의 화려한 밤문화와 열기로운 분위기를 즐기고 싶은 사람들을 위한 완벽한 장소입니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -327,31 +327,8 @@ func initHighPublic() {
 			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 110000, RT: 50000},
-		DatePublished: storeDate(2023, 8, 25),
-		DateModified:  storeDate(2023, 8, 25),
-	})
-	stores = append(stores, &Store{
-		Location: &Location{
-			Do:           "서울",
-			Si:           "강남구",
-			Dong:         "삼성동",
-			Address:      "142-29",
-			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.0777556298026!2d127.04878313939513!3d37.50608421069179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca411c1921beb%3A0x7c77ea8a217f86a3!2s142-29%20Samseong-dong%2C%20Gangnam-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1667050924490!5m2!1sen!2skr",
-		},
-		Type:        STORE_TYPE_HIGHPUBLIC,
-		Title:       "파티",
-		Description: "강남 파티 하이퍼블릭 – 화려한 라이트와 음악, 열정 넘치는 파티 분위기가 만나는 강남의 프리미어 유흥주점. 다채로운 이벤트와 특별한 DJ 공연으로 당신의 밤을 환상적인 경험으로 채워줄 최적의 장소. 친구들과 함께하는 흥겨운 밤을 강력한 비트와 함께 누려보세요.",
-		Active: &Active{
-			IsPermanentClosed: false,
-			Reason:            "",
-		},
-		Hour: &Hour{
-			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
-			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
-		},
-		Menu:          &Menu{Part1Whisky: 210000, Part2Whisky: 140000, TC: 110000, RT: 50000},
-		DatePublished: storeDate(2023, 8, 25),
-		DateModified:  storeDate(2023, 8, 25),
+		DatePublished: storeDate(2023, 9, 5),
+		DateModified:  storeDate(2023, 9, 5),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -363,7 +340,7 @@ func initHighPublic() {
 		},
 		Type:        STORE_TYPE_HIGHPUBLIC,
 		Title:       "수목원",
-		Description: "강남 수목원 하이퍼블릭 – 강남 지역의 현대적이고 화려한 유흥주점 중 하나로, 낮과 밤을 아름다운 풍경과 즐거운 분위기에서 즐길 수 있는 곳입니다. 이 곳은 아름다운 조명과 세련된 인테리어로 꾸며져 있어 파티나 모임에 최적의 장소로 알려져 있습니다. 강남 수목원 하이퍼블릭은 다양한 음료 메뉴와 칵테일을 제공하며, 특별한 이벤트와 라이브 음악 퍼포먼스로 방문객들에게 즐거운 시간을 선사합니다.",
+		Description: "강남 수목원 하이퍼블릭은 강남 지역에서 독특하고 화려한 밤문화를 즐길 수 있는 최고의 장소 중 하나로 손꼽히며, 다채로운 액티비티와 흥겨운 분위기를 찾는 이들에게 확실한 만족을 제공합니다. 24시간 영업으로, 서울의 밤을 더욱 특별하게 만들어 줄 곳 중 하나입니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -373,8 +350,8 @@ func initHighPublic() {
 			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
 		},
 		Menu:          &Menu{Part1Whisky: 250000, Part2Whisky: 0, TC: 130000, RT: 50000},
-		DatePublished: storeDate(2023, 9, 03),
-		DateModified:  storeDate(2023, 9, 03),
+		DatePublished: storeDate(2023, 9, 5),
+		DateModified:  storeDate(2023, 9, 5),
 	})
 }
 
@@ -389,7 +366,7 @@ func initLeggingsRoom() {
 		},
 		Type:        STORE_TYPE_LEGGINGS,
 		Title:       "하이킥",
-		Description: "강남 하이킥 레깅스룸 - 최상의 유흥주점 경험을 위한 선택. 감각적인 분위기에서 다채로운 음료와 함께 즐거운 시간을 보내세요. 프리미엄 서비스로 편안하고 특별한 순간을 만끽하세요. 강남 지역에서의 완벽한 레저 활동을 위한 최적의 장소입니다.",
+		Description: "강남 하이킥 레깅스룸은 매력적인 레깅스걸들과 함께 즐길 수 있는 곳으로, 실력있는 댄서들의 화려한 퍼포먼스와 함께 음악과 춤, 술과 음식을 즐길 수 있습니다. 여기에서는 다양한 칵테일과 주류를 제공하며, 고객들은 친구들과 즐거운 시간을 보낼 수 있는 최적의 장소입니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -399,8 +376,8 @@ func initLeggingsRoom() {
 			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
 		},
 		Menu:          &Menu{Part1Whisky: 250000, Part2Whisky: 0, TC: 150000, RT: 50000},
-		DatePublished: storeDate(2023, 8, 14),
-		DateModified:  storeDate(2023, 8, 14),
+		DatePublished: storeDate(2023, 9, 5),
+		DateModified:  storeDate(2023, 9, 5),
 	})
 }
 
@@ -415,7 +392,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "유니크",
-		Description: "강남 유니크 쩜오 - 감각적인 분위기와 다채로운 음악으로 즐거운 시간을 제공하는 강남 유흥주점. 특별한 경험과 맛있는 칵테일로 당신의 밤을 더욱 특별하게 만들어 드립니다. 예약 및 방문 문의 환영!",
+		Description: "강남 유니크 쩜오는 강남 지역에서 유명한 유흥주점 중 하나로, 독특하고 특별한 분위기를 제공하는 곳입니다. 이 곳은 현대적이고 화려한 인테리어로 꾸며져 있으며, 고객들에게 다채로운 음악과 엔터테인먼트를 제공합니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -425,8 +402,8 @@ func initDot5() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
-		DatePublished: storeDate(2023, 8, 11),
-		DateModified:  storeDate(2023, 8, 11),
+		DatePublished: storeDate(2023, 9, 5),
+		DateModified:  storeDate(2023, 9, 5),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -438,7 +415,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "831",
-		Description: "강남 831 쩜오 - 화려한 유흥주점의 최상급 엔터테인먼트! 강남에서 누리는 놀라운 밤의 경험, 다채로운 행사와 음악, 풍성한 메뉴로 특별한 시간을 만끽하세요. 높은 서비스 퀄리티와 편안한 분위기가 어우러진 강남의 명성 있는 유흥 장소.",
+		Description: "강남 831 쩜오는 편안한 의자와 테이블이 배치된 모던하고 스타일리시한 인테리어로 꾸며져 있으며, DJ의 멋진 음악과 무대 퍼포먼스로 고객들에게 즐거운 시간을 선사합니다. 또한, 다양한 주류 메뉴와 칵테일을 제공하여, 고객들이 자신의 취향에 맞게 골라 즐길 수 있습니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -448,8 +425,8 @@ func initDot5() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
-		DatePublished: storeDate(2023, 8, 12),
-		DateModified:  storeDate(2023, 8, 12),
+		DatePublished: storeDate(2023, 9, 5),
+		DateModified:  storeDate(2023, 9, 5),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -461,7 +438,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "에이원",
-		Description: "강남의 화려한 밤을 빛내는 유흥주점, 강남 에이원 쩜오 입니다. 최상의 서비스와 다채로운 엔터테인먼트로 즐거운 시간을 보내세요. 미식과 음악, 다채로운 분위기가 어우러진 강남의 핫 스팟에서 특별한 순간을 만끽해보세요.",
+		Description: "강남 에이원 쩜오는 강남 지역에서 손님들에게 다양한 엔터테인먼트와 음료를 제공하는 유흥주점입니다. 이 장소는 강남의 활기찬 나이트라이프와 열띤 분위기를 경험하고자 하는 분들에게 인기가 있습니다. 강남 에이원 쩜오는 친절하고 프로페셔널한 스태프들이 고객 서비스에 최선을 다하며, 파티나 이벤트를 개최하는 데에도 적합한 장소입니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -471,8 +448,8 @@ func initDot5() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
-		DatePublished: storeDate(2023, 8, 13),
-		DateModified:  storeDate(2023, 8, 13),
+		DatePublished: storeDate(2023, 9, 5),
+		DateModified:  storeDate(2023, 9, 5),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -484,7 +461,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "미라클",
-		Description: "강남 미라클 쩜오 - 뛰어난 유흥과 엔터테인먼트를 즐길 수 있는 강남의 대표적인 미라클 쩜오 유흥주점. 화려한 분위기와 다채로운 이벤트로 특별한 시간을 만끽하세요.",
+		Description: "강남 미라클 쩜오는 대한민국 서울의 강남 지역에 위치한 유흥주점으로, 지역 내에서 손꼽히는 인기 있는 엔터테인먼트 장소 중 하나입니다. 이 곳은 한국의 대표적인 유흥 문화를 체험할 수 있는 곳 중 하나로, 다양한 엔터테인먼트 옵션과 즐거운 분위기로 손님들을 맞이합니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -494,8 +471,8 @@ func initDot5() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
-		DatePublished: storeDate(2023, 8, 14),
-		DateModified:  storeDate(2023, 8, 14),
+		DatePublished: storeDate(2023, 9, 5),
+		DateModified:  storeDate(2023, 9, 5),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -507,7 +484,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "오키도키",
-		Description: "강남 오키도키 쩜오 - 끝없는 즐거움과 화려한 엔터테인먼트가 어우러진 강남의 유흥주점. 다채로운 음악과 화려한 무대, 맛있는 음식으로 환상적인 시간을 만끽하세요. 감각적인 놀이와 함께하는 특별한 순간들이 기다립니다.",
+		Description: "강남 오키도키는 대한민국 서울의 강남 지역에 위치한 인기 유흥주점으로, 현지와 관광객 모두에게 인기 있는 엔터테인먼트 공간 중 하나입니다. 이 곳은 다양한 오락 요소와 파티 분위기를 즐길 수 있는 곳으로, 다음과 같은 특징을 가지고 있습니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -517,8 +494,8 @@ func initDot5() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
-		DatePublished: storeDate(2023, 8, 14),
-		DateModified:  storeDate(2023, 8, 14),
+		DatePublished: storeDate(2023, 9, 5),
+		DateModified:  storeDate(2023, 9, 5),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -530,7 +507,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "인트로",
-		Description: "강남 인트로 쩜오(XXO) - 강남에서 빛나는 유흥주점과 열정적인 클럽 문화가 어우러진 곳. 최상의 음악과 고급스러운 분위기에서 펼쳐지는 미모와 역동의 순간을 만끽하세요. 강남의 뜨거운 밤을 감동으로 만들어 줄 인트로 쩜오에서 특별한 시간을 누리세요.",
+		Description: "강남 인트로 쩜오는 강남의 다른 유흥 시설과 가까워 위치적으로도 편리하며, 서울에서의 특별한 밤을 만들고자 하는 분들에게 추천하는 곳 중 하나입니다. 편안한 분위기와 환상적인 엔터테인먼트를 원한다면, 강남 인트로 쩜오를 방문해보세요.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -540,8 +517,8 @@ func initDot5() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
-		DatePublished: storeDate(2023, 8, 14),
-		DateModified:  storeDate(2023, 8, 14),
+		DatePublished: storeDate(2023, 9, 5),
+		DateModified:  storeDate(2023, 9, 5),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -553,7 +530,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "머니볼",
-		Description: "강남 머니볼 쩜오 - 강남에서 새로운 레벨의 유흥과 엔터테인먼트를 경험하세요. 머니볼 쩜오는 트렌디한 강남지역에서 화려한 유흥주점으로, 다채로운 이벤트와 신나는 분위기로 당신의 밤을 더욱 특별하게 만들어드립니다. 친구들과 함께 머니볼 쩜오에서 환상적인 시간을 보내보세요!",
+		Description: "강남 머니볼 쩜오는 대한민국 서울 강남 지역에 위치한 유흥주점 중 하나로, 도심의 번화가에서 활기찬 분위기와 다양한 엔터테인먼트를 제공하는 곳입니다. 이곳은 주로 젊은 이들과 비즈니스 모임을 위한 장소로 알려져 있으며, 다양한 음료와 칵테일, 안주 메뉴를 즐길 수 있습니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -563,8 +540,8 @@ func initDot5() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
-		DatePublished: storeDate(2023, 8, 14),
-		DateModified:  storeDate(2023, 8, 14),
+		DatePublished: storeDate(2023, 9, 5),
+		DateModified:  storeDate(2023, 9, 5),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -576,7 +553,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "라이징",
-		Description: "강남 라이징 쩜오(meta) - 강남지역의 뛰어난 유흥주점으로, 열정 넘치는 분위기와 다양한 음료 메뉴로 최상의 놀이와 휴식을 선사합니다. 대표적인 엔터테인먼트와 실내공간으로 즐거운 시간을 만끽하세요. 강남 라이징 쩜오에서 특별한 순간을 함께하세요.",
+		Description: "강남 라이징 쩜오는 강남 지역에 위치한 인기 있는 유흥주점으로, 그 신명을 거두고 있는 곳입니다. 이 곳은 화려하고 현대적인 분위기를 자랑하며, 주로 클럽 음악과 댄스 퍼포먼스로 알려져 있습니다. 라이징 쩜오는 고품질의 음료와 다채로운 칵테일 메뉴로 손님들을 맞이하며, 낮과 밤을 가리지 않고 엔터테인먼트와 즐거움을 제공합니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -586,8 +563,8 @@ func initDot5() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
-		DatePublished: storeDate(2023, 8, 15),
-		DateModified:  storeDate(2023, 8, 15),
+		DatePublished: storeDate(2023, 9, 5),
+		DateModified:  storeDate(2023, 9, 5),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -599,7 +576,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "임팩트",
-		Description: "강남 임팩트 쩜오 – 최고의 유흥주점으로서 강력한 엔터테인먼트와 화려한 분위기로 강남의 밤을 빛내는 곳입니다. 다채로운 프로그램과 풍부한 음료 메뉴로 즐거운 시간을 보내실 수 있습니다. 감각적인 무드와 함께하는 강남의 아름다운 밤을 경험해보세요.",
+		Description: "강남 임팩트 쩜오는 서울의 강남 지역에 위치한 역동적인 유흥주점으로, 이곳은 강남의 밤문화를 대표하는 곳 중 하나입니다. 임팩트 쩜오는 화려한 조명과 풍부한 음악으로 분위기를 고조시키며, 다채로운 칵테일과 음료를 제공하여 고객들에게 즐거운 시간을 제공합니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -609,8 +586,8 @@ func initDot5() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
-		DatePublished: storeDate(2023, 8, 15),
-		DateModified:  storeDate(2023, 8, 15),
+		DatePublished: storeDate(2023, 9, 5),
+		DateModified:  storeDate(2023, 9, 5),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -622,7 +599,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "스테이",
-		Description: "강남 스테이 쩜오 - 강남지역 유흥주점 정보와 다양한 놀거리를 제공하는 플랫폼입니다. 강남의 핫한 클럽, 바, 라운지 등 다양한 엔터테인먼트 장소 정보를 확인하고 즐거운 시간을 보내세요!",
+		Description: "강남 스테이 쩜오는 아름다운 인테리어와 조명, 고급스러운 분위기로 고객들에게 편안한 분위기를 제공합니다. 다양한 음료 메뉴와 간식을 통해 손님들에게 다채로운 맛을 제공하며, 프로페셔널한 바텐더들이 특별한 칵테일을 선사해줍니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -632,8 +609,8 @@ func initDot5() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
-		DatePublished: storeDate(2023, 8, 16),
-		DateModified:  storeDate(2023, 8, 16),
+		DatePublished: storeDate(2023, 9, 5),
+		DateModified:  storeDate(2023, 9, 5),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -645,7 +622,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "에프원",
-		Description: "강남의 섹시하고 화려한 세계, 강남 에프원 쩜오. 열정 넘치는 라이브 퍼포먼스와 다채로운 음악으로 풍성한 시간을 만끽하세요. 감각적인 조명과 멋진 분위기 속에서 친구들과 즐거운 시간을 보내실 수 있는 유흥주점입니다. 강남의 밤을 더욱 빛나게 하는 곳, 강남 에프원 쩜오에서 특별한 순간을 누려보세요.",
+		Description: "강남 에프원 쩜오는 강남 지역의 다양한 연령대와 취향을 고려하여 다양한 프로그램과 이벤트를 제공하며, 친구들과의 모임, 회식, 파티, 혹은 특별한 날을 기념하기에 최적의 장소 중 하나입니다. 강남 에프원 쩜오에서 잊지 못할 경험을 즐겨보세요!",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -655,8 +632,8 @@ func initDot5() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
-		DatePublished: storeDate(2023, 8, 16),
-		DateModified:  storeDate(2023, 8, 16),
+		DatePublished: storeDate(2023, 9, 5),
+		DateModified:  storeDate(2023, 9, 5),
 	})
 }
 
@@ -671,7 +648,7 @@ func initClub() {
 		},
 		Type:        STORE_TYPE_CLUB,
 		Title:       "사운드",
-		Description: "강남 사운드 클럽은 대한민국 서울의 역사적인 클럽 문화를 대표하는 곳입니다. 최신 음향 시스템과 화려한 조명, 다양한 음악 장르로 빛나는 클럽에서 특별한 밤을 경험해보세요. 강남 사운드 클럽에서는 역량 있는 DJs의 라이브 퍼포먼스와 함께 춤과 음악의 열기를 만끽할 수 있습니다. 클래식부터 현대 음악까지 모두를 위한 장소로, 당신의 특별한 순간을 새롭게 만들어보세요.",
+		Description: "강남 사운드 클럽은 세계적으로 유명한 디제이와 아티스트들을 초빙하여 매주 열리는 화려한 파티와 이벤트로 손님들을 매료시킵니다. 클럽 내부는 현대적이고 고급스러운 인테리어로 꾸며져 있으며, 강렬한 빛과 사운드 시스템이 함께 어우러져 춤을 춤으로써 파티 분위기를 한층 더 뜨겁게 만듭니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -681,8 +658,8 @@ func initClub() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
-		DatePublished: storeDate(2023, 8, 17),
-		DateModified:  storeDate(2023, 8, 17),
+		DatePublished: storeDate(2023, 9, 5),
+		DateModified:  storeDate(2023, 9, 5),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -694,7 +671,7 @@ func initClub() {
 		},
 		Type:        STORE_TYPE_CLUB,
 		Title:       "레이스",
-		Description: "강남 레이스 클럽: 음악과 리듬이 만나는 열정적인 댄스 파티 공간. 최신 음악과 화려한 조명이 어우러진 클럽에서 펼쳐지는 환상적인 댄스 파티를 즐겨보세요. 강남의 역동적인 밤문화를 대표하는 레이스 클럽은 다채로운 춤과 음악, 끊임없는 즐거움이 당신을 기다립니다. 함께 뛰어난 음악과 함께 춤추며 즐거움을 누려보세요!",
+		Description: "강남 레이스 클럽은 대한민국 서울의 중심인 강남 지역에 위치한 역동적이고 흥미로운 엔터테인먼트 공간입니다. 이 클럽은 클래식한 나이트클럽 분위기와 현대적인 디자인을 조화롭게 결합하여, 파티와 레이싱의 열기를 동시에 느낄 수 있는 곳으로 알려져 있습니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -704,8 +681,8 @@ func initClub() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
-		DatePublished: storeDate(2023, 8, 17),
-		DateModified:  storeDate(2023, 8, 17),
+		DatePublished: storeDate(2023, 9, 5),
+		DateModified:  storeDate(2023, 9, 5),
 	})
 }
 
@@ -720,7 +697,7 @@ func initHobba() {
 		},
 		Type:        STORE_TYPE_HOBBA,
 		Title:       "어게인",
-		Description: "강남 어게인 호빠: 열정 넘치는 클럽 분위기와 다채로운 음악, 화려한 조명 아래에서 최상의 엔터테인먼트를 경험하세요. 강남에서 빠져나올 수 없는 멋진 순간들이 여러분을 기다립니다. 예약 및 정보 확인은 지금 바로!",
+		Description: "강남 어게인 호빠는 서울의 강남 지역에서 인기 있는 여성유흥주점 중 하나로, 화려한 분위기와 다양한 엔터테인먼트 옵션을 제공하는 곳입니다. 이곳은 파티와 이벤트, 친구들과의 모임, 비즈니스 만찬 및 여가 시간을 즐기기에 완벽한 장소로 손꼽힙니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -730,8 +707,8 @@ func initHobba() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 180000, Part2Whisky: 0, TC: 60000, RT: 50000},
-		DatePublished: storeDate(2023, 8, 18),
-		DateModified:  storeDate(2023, 8, 18),
+		DatePublished: storeDate(2023, 9, 5),
+		DateModified:  storeDate(2023, 9, 5),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -743,7 +720,7 @@ func initHobba() {
 		},
 		Type:        STORE_TYPE_HOBBA,
 		Title:       "씨엔엔",
-		Description: "강남의 씨엔엔 호빠 클럽 소개 - 열정 넘치는 음악과 화려한 조명이 어우러진 강남의 최고급 클럽, 씨엔엔 호빠(CNN HOBBA). 트렌디한 분위기와 다채로운 이벤트로 즐거움 가득한 밤을 만끽하세요. VIP 서비스부터 다양한 DJ 공연까지, 강남의 끝없는 밤을 씨엔엔 호빠와 함께하세요.",
+		Description: "강남은 대한민국의 중심지 중 하나로, 그만큼 강남 씨엔엔 호빠의 엔터테인먼트 공간도 고품격이며 세련된 분위기를 자랑합니다. 강남 씨엔엔 호빠 역시 고급스러운 인테리어와 조명으로 공간을 아름답게 꾸며, 고객들에게 편안하고 럭셔리한 분위기를 제공합니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -753,8 +730,8 @@ func initHobba() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 180000, Part2Whisky: 0, TC: 60000, RT: 50000},
-		DatePublished: storeDate(2023, 8, 18),
-		DateModified:  storeDate(2023, 8, 18),
+		DatePublished: storeDate(2023, 9, 5),
+		DateModified:  storeDate(2023, 9, 5),
 	})
 }
 

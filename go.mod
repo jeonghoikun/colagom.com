@@ -1,4 +1,4 @@
-module github.com/jeonghoikun/hamjayoung.com
+module github.com/jeonghoikun/colagom.com
 
 go 1.19
 

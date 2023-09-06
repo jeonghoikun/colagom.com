@@ -1,1 +1,1 @@
-# hamjayoung.com
+# colagom.com
