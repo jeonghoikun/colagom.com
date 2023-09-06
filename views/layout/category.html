@@ -6,13 +6,13 @@
 	{{template "components/head/styles"}}
 	{{template "components/head/scripts"}}
 </head>
-<body class="antialiased bg-stone-900 text-gray-300">
+<body class="antialiased bg-slate-900 text-gray-300">
 	{{template "components/header/global" .}}
 	{{template "components/aside/profile" .}}
 	<div class="container mx-auto mt-10">
-		<div class="border border-stone-600 rounded-md p-3 mx-6 text-stone-400 text-sm font-semibold space-x-1">
-			<a class="inline-block hover:text-stone-300" href="/">홈</a>
-			<span class="inline-block text-stone-600">/</span>
+		<div class="border border-slate-600 rounded-md p-3 mx-6 text-slate-400 text-sm font-semibold space-x-1">
+			<a class="inline-block hover:text-slate-300" href="/">홈</a>
+			<span class="inline-block text-slate-600">/</span>
 			<span class="inline-block">{{.Breadcrumbs.StoreType}}</span>
 		</div>
 	</div>

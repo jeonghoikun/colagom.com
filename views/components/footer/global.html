@@ -1,9 +1,9 @@
-<footer class="border-t border-stone-500 my-20">
+<footer class="border-t border-slate-500 my-20">
 	<div class="container mx-auto p-6 mt-6">
 		<ul class="space-y-6 sm:space-y-0 sm:gap-6 text-sm sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
 			{{range .Site.Store.Categories}}
 			<li class="space-y-3">
-				<div class="text-stone-200 font-semibold">
+				<div class="text-slate-200 font-semibold">
 					<a class="hover:underline" href="/category/서울/강남구/{{.Name}}">{{.Name}}({{len .Stores}})</a>
 				</div>
 				{{range .Stores}}
@@ -21,7 +21,7 @@
 				<a class="block w-fit flex space-x-1 hover:underline" href="/">
 					<img class="block w-6" src="/static/img/site/logo/96.png" alt="{{.Site.Config.Title}} 로고">
 					<div class="flex items-center">
-						<span class="text-stone-100 font-semibold">{{.Site.Config.Title}}</span>
+						<span class="text-slate-100 font-semibold">{{.Site.Config.Title}}</span>
 					</div>
 				</a>
 			</div>
@@ -40,6 +40,6 @@
 				</div>
 			</div>
 		</div>
-		<div class="text-sm text-stone-500 text-center">Copyright © {{Time.Format "2006"}} {{.Site.Config.Title}}. All rights reserved.</div>
+		<div class="text-sm text-slate-500 text-center">Copyright © {{Time.Format "2006"}} {{.Site.Config.Title}}. All rights reserved.</div>
 	</div>
 </footer>
