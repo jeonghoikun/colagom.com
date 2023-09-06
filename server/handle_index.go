@@ -43,7 +43,7 @@ func (*indexHandler) robots(c *fiber.Ctx) error {
 	var ss []string
 	ss = append(ss, "User-agent: *")
 	ss = append(ss, "Allow: /")
-	ss = append(ss, fmt.Sprintf("Sitemap: %s/sitemap.xml", site.Config.Domain))
+	ss = append(ss, fmt.Sprintf("Sitemap: https://%s/sitemap.xml", site.Config.Domain))
 	return c.Status(http.StatusOK).SendString(strings.Join(ss, "\n"))
 }
 
