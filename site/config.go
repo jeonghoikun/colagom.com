@@ -46,7 +46,7 @@ func Init() {
 	// 업종마다 전화번호가 다른경우 store/store.go 파일의 setPhoneNumber 함수에서 하드코딩
 	c.PhoneNumber = "010-2781-9627"
 	c.SearchEngineConnection = &searchEngineConnection{
-		Google: "FDeP9HyH50m-okHMW0D4Ww7Y_3LAu7hl3q0LUuU_P_E",
+		Google: "_0O-P4S7tPNubMmy6jQikADwwAgFvJH5Ep0gWbFthYM",
 	}
 	Config = c
 }
