@@ -266,6 +266,29 @@ func initHighPublic() {
 			Do:           "서울",
 			Si:           "강남구",
 			Dong:         "역삼동",
+			Address:      "604-7",
+			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.088372324827!2d127.0311099!3d37.5058338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3fb63865cd7%3A0x31427b556da83644!2s604-7%20Yeoksam-dong%2C%20Gangnam-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1662056274810!5m2!1sen!2skr",
+		},
+		Type:        STORE_TYPE_HIGHPUBLIC,
+		Title:       "런닝래빗",
+		Description: "강남 런닝래빗 하이퍼블릭은 서울 강남의 인기 유흥주점으로, 화려한 분위기와 다채로운 엔터테인먼트를 즐길 수 있는 곳입니다.",
+		Active: &Active{
+			IsPermanentClosed: false,
+			Reason:            "",
+		},
+		Hour: &Hour{
+			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
+			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
+		},
+		Menu:          &Menu{Part1Whisky: 170000, Part2Whisky: 140000, TC: 110000, RT: 50000},
+		DatePublished: storeDate(2023, 9, 28),
+		DateModified:  storeDate(2023, 9, 29),
+	})
+	stores = append(stores, &Store{
+		Location: &Location{
+			Do:           "서울",
+			Si:           "강남구",
+			Dong:         "역삼동",
 			Address:      "831-42",
 			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.6005044881886!2d127.03146729999997!3d37.4937527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca15057aba5c3%3A0x3c39e1c32ad3bd0f!2s831-42%20Yeoksam-dong%2C%20Gangnam-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1665731145337!5m2!1sen!2skr",
 		},
