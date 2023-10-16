@@ -43,7 +43,10 @@
 		</section>
 		<section>
 			<div class="px-6">
-				<h2 class="text-xl font-semibold text-slate-200">🔍 {{.SiMini}} {{.Store.Title}} {{.Store.Type}} 기본 정보</h2>
+				<div class="text-xl font-semibold text-slate-200">
+					<span>🔍</span>
+					<h2 class="inline-block"> {{.SiMini}} {{.Store.Title}} {{.Store.Type}} 기본 정보</h2>
+				</div>
 				<div class="mt-3 py-10 shadow-sm shadow-black rounded-xl border border-slate-700/50">
 					<table class="table-auto border-collapse w-full border-y border-slate-500/60 text-sm">
 						<tr class="border-b border-slate-500/40">
@@ -84,7 +87,10 @@
 		</section>
 		<section>
 			<div class="px-6">
-				<h2 class="text-xl font-semibold text-slate-200">🎁 {{.SiMini}} {{.Store.Title}} {{.Store.Type}} 이벤트</h2>
+				<div class="text-xl font-semibold text-slate-200">
+					<span>🎁</span>
+					<h2 class="inline-block"> {{.SiMini}} {{.Store.Title}} {{.Store.Type}} 이벤트</h2>
+				</div>
 				<div class="mt-3 py-10 shadow-sm shadow-black rounded-xl border border-slate-700/50">
 					<table class="table-auto border-collapse w-full border-y border-slate-500/60 text-sm">
 						<tr class="border-b border-slate-500/40">
@@ -105,7 +111,10 @@
 		</section>
 		<section>
 			<div class="px-6">
-				<h2 class="text-xl font-semibold text-slate-200">⌚️ {{.SiMini}} {{.Store.Title}} {{.Store.Type}} 영업시간</h2>
+				<div class="text-xl font-semibold text-slate-200">
+					<span>⌚️</span>
+					<h2 class="inline-block">{{.SiMini}} {{.Store.Title}} {{.Store.Type}} 영업시간</h2>
+				</div>
 				<div class="mt-3 py-10 shadow-sm shadow-black rounded-xl border border-slate-700/50">
 					<table class="table-auto border-collapse w-full border-y border-slate-500/60 text-sm">
 						<tr class="border-b border-slate-500/40">
@@ -130,7 +139,10 @@
 		</section>
 		<section>
 			<div class="px-6">
-				<h2 class="text-xl font-semibold text-slate-200">🏷️ {{.SiMini}} {{.Store.Title}} {{.Store.Type}} 메뉴</h2>
+				<div class="text-xl font-semibold text-slate-200">
+					<span>🏷️</span>
+					<h2 class="inline-block">{{.SiMini}} {{.Store.Title}} {{.Store.Type}} 메뉴</h2>
+				</div>
 				<div class="mt-3 py-10 shadow-sm shadow-black rounded-xl border border-slate-700/50">
 					<table class="table-auto border-collapse w-full border-y border-slate-500/60 text-sm">
 						<tr class="border-b border-slate-500/40">
@@ -155,7 +167,10 @@
 		</section>
 		<section>
 			<div class="px-6">
-				<h2 class="text-xl font-semibold text-slate-200">💰 {{.SiMini}} {{.Store.Title}} {{.Store.Type}} 인원수 별 가격</h2>
+				<div class="text-xl font-semibold text-slate-200">
+					<span>💰</span>
+					<h2 class="inline-block">{{.SiMini}} {{.Store.Title}} {{.Store.Type}} 인원수 별 가격</h2>
+				</div>
 				{{if .Store.Hour.Part1.Has}}
 				<div class="mt-3">
 					<h3 class="text-lg font-semibold ml-3">1부 {{.Store.Hour.Part1.Open}}~{{.Store.Hour.Part1.Closed}}</h3>
@@ -236,14 +251,20 @@
 		</section>
 		<section>
 			<div class="px-6">
-				<h2 class="text-xl font-semibold text-slate-200">📌 {{.SiMini}} {{.Store.Title}} {{.Store.Type}} 오시는 길</h2>
+				<div class="text-xl font-semibold text-slate-200">
+					<span>📌</span>
+					<h2 class="inline-bock">{{.SiMini}} {{.Store.Title}} {{.Store.Type}} 오시는 길</h2>
+				</div>
 				<p class="mt-3">{{.Store.Location.Do}} {{.Store.Location.Si}} {{.Store.Location.Dong}} {{.Store.Location.Address}}</p>
 				<iframe class="w-full h-[300px] mx-auto mt-3" title="map" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="{{.Store.Location.GoogleMapSrc}}" style="filter: grayscale(0.1) contrast(1) opacity(0.9);"></iframe>
 			</div>
 		</section>
 		<section>
 			<div class="px-6">
-				<h2 class="text-xl font-semibold text-slate-200">🎆 {{.SiMini}} {{.Store.Title}} {{.Store.Type}} 이미지</h2>
+				<div class="text-xl font-semibold text-slate-200">
+					<span>🎆</span>
+					<h2 class="inline-block">{{.SiMini}} {{.Store.Title}} {{.Store.Type}} 이미지</h2>
+				</div>
 				<p class="mt-3">{{.Store.Title}} 전경 및 내부 사진</p>
 				<div class="mt-3 space-y-3 sm:space-y-0 sm:grid sm:grid-cols-2 gap-3">
 					{{$siMini := .SiMini}}
@@ -256,7 +277,10 @@
 		</section>
 		<section>
 			<div class="px-6">
-				<h2 class="text-xl font-semibold text-slate-200">✍️ {{.SiMini}} {{.Store.Title}} {{.Store.Type}} 소개글</h2>
+				<div class="text-xl font-semibold text-slate-200">
+					<span>✍️</span>
+					<h2 class="inline-block">{{.SiMini}} {{.Store.Title}} {{.Store.Type}} 소개글</h2>
+				</div>
 				<article class="mt-3 space-y-3">{{embed}}</article>
 			</div>
 		</section>
