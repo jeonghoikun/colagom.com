@@ -175,8 +175,8 @@ func initKaraoke() {
 		Title:       "퍼펙트",
 		Description: "강남 퍼펙트 가라오케는 화려한 분위기와 최신 노래 라이브러리로 여러분을 미쳐하게 할 최고의 유흥주점입니다. 노래를 부르고 춤추며 즐기는 가라오케 무대에서 또래와 즐거운 시간을 보내보세요!",
 		Active: &Active{
-			IsPermanentClosed: false,
-			Reason:            "",
+			IsPermanentClosed: true,
+			Reason:            "하이퍼블릭으로 업종 변경",
 		},
 		Hour: &Hour{
 			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
@@ -184,7 +184,7 @@ func initKaraoke() {
 		},
 		Menu:          &Menu{Part1Whisky: 350000, Part2Whisky: 160000, TC: 120000, RT: 50000},
 		DatePublished: storeDate(2023, 9, 5),
-		DateModified:  storeDate(2023, 9, 5),
+		DateModified:  storeDate(2023, 10, 15),
 	})
 }
 
@@ -375,6 +375,29 @@ func initHighPublic() {
 		Menu:          &Menu{Part1Whisky: 250000, Part2Whisky: 0, TC: 130000, RT: 50000},
 		DatePublished: storeDate(2023, 9, 5),
 		DateModified:  storeDate(2023, 9, 5),
+	})
+	stores = append(stores, &Store{
+		Location: &Location{
+			Do:           "서울",
+			Si:           "강남구",
+			Dong:         "논현동",
+			Address:      "151-30",
+			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.8479106529085!2d127.03145169999998!3d37.5115051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3f05b7c4407%3A0xbb44e0b5425b8a89!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDrhbztmITrj5kgMTUxLTMw!5e0!3m2!1sko!2skr!4v1660745693771!5m2!1sko!2skr",
+		},
+		Type:        STORE_TYPE_HIGHPUBLIC,
+		Title:       "퍼펙트",
+		Description: "강남 퍼펙트 하이퍼블릭에서는 독보적인 서비스와 미학이 공존하는 공간에서 품격 있고 독특한 경험을 제공합니다. 도심 속에서 찾아보기 힘든 특별한 휴식과 여유를 선사하며, 각종 이벤트와 프로모션을 통해 방문객에게 새로운 즐거움과 설렘을 선사합니다. 서울 강남구의 중심지에서 품격과 스타일을 느껴보세요.",
+		Active: &Active{
+			IsPermanentClosed: false,
+			Reason:            "",
+		},
+		Hour: &Hour{
+			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
+			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
+		},
+		Menu:          &Menu{Part1Whisky: 350000, Part2Whisky: 160000, TC: 110000, RT: 50000},
+		DatePublished: storeDate(2023, 10, 15),
+		DateModified:  storeDate(2023, 10, 15),
 	})
 }
 
