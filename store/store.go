@@ -210,7 +210,7 @@ func initShirtRoom() {
 		},
 		Menu:          &Menu{Part1Whisky: 160000, Part2Whisky: 130000, TC: 120000, RT: 50000},
 		DatePublished: storeDate(2023, 9, 5),
-		DateModified:  storeDate(2023, 9, 5),
+		DateModified:  storeDate(2024, 1, 26),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -233,7 +233,7 @@ func initShirtRoom() {
 		},
 		Menu:          &Menu{Part1Whisky: 160000, Part2Whisky: 130000, TC: 120000, RT: 50000},
 		DatePublished: storeDate(2023, 9, 5),
-		DateModified:  storeDate(2023, 9, 5),
+		DateModified:  storeDate(2024, 1, 26),
 	})
 }
 
@@ -259,7 +259,7 @@ func initHighPublic() {
 		},
 		Menu:          &Menu{Part1Whisky: 170000, Part2Whisky: 140000, TC: 110000, RT: 50000},
 		DatePublished: storeDate(2023, 9, 5),
-		DateModified:  storeDate(2023, 9, 5),
+		DateModified:  storeDate(2024, 1, 26),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -282,7 +282,7 @@ func initHighPublic() {
 		},
 		Menu:          &Menu{Part1Whisky: 170000, Part2Whisky: 140000, TC: 110000, RT: 50000},
 		DatePublished: storeDate(2023, 9, 28),
-		DateModified:  storeDate(2023, 9, 29),
+		DateModified:  storeDate(2024, 1, 26),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -305,7 +305,7 @@ func initHighPublic() {
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 110000, RT: 50000},
 		DatePublished: storeDate(2023, 9, 5),
-		DateModified:  storeDate(2023, 9, 5),
+		DateModified:  storeDate(2024, 1, 26),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -328,7 +328,7 @@ func initHighPublic() {
 		},
 		Menu:          &Menu{Part1Whisky: 170000, Part2Whisky: 140000, TC: 110000, RT: 50000},
 		DatePublished: storeDate(2023, 9, 5),
-		DateModified:  storeDate(2023, 9, 5),
+		DateModified:  storeDate(2024, 1, 26),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -374,7 +374,7 @@ func initHighPublic() {
 		},
 		Menu:          &Menu{Part1Whisky: 250000, Part2Whisky: 0, TC: 130000, RT: 50000},
 		DatePublished: storeDate(2023, 9, 5),
-		DateModified:  storeDate(2023, 9, 5),
+		DateModified:  storeDate(2024, 1, 26),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -397,7 +397,53 @@ func initHighPublic() {
 		},
 		Menu:          &Menu{Part1Whisky: 200000, Part2Whisky: 160000, TC: 120000, RT: 50000},
 		DatePublished: storeDate(2023, 10, 15),
-		DateModified:  storeDate(2023, 12, 24),
+		DateModified:  storeDate(2024, 1, 26),
+	})
+	stores = append(stores, &Store{
+		Location: &Location{
+			Do:           "서울",
+			Si:           "강남구",
+			Dong:         "역삼동",
+			Address:      "824-8",
+			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.434083647925!2d127.0305156!3d37.4976789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca15741b03c33%3A0xf28611c1cfc94af5!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDsl63sgrzrj5kgODI0LTg!5e0!3m2!1sko!2skr!4v1704324043037!5m2!1sko!2skr",
+		},
+		Type:        STORE_TYPE_HIGHPUBLIC,
+		Title:       "워라벨",
+		Description: "강남 워라벨 하이퍼블릭은 강남구에 위치한 유흥주점으로, 일과 삶의 균형을 중시하는 현대적인 분위기와 고급 서비스를 제공합니다.",
+		Active: &Active{
+			IsPermanentClosed: false,
+			Reason:            "",
+		},
+		Hour: &Hour{
+			Part1: &TimeType{Has: true, Open: "18:00", Closed: "05:00"},
+			Part2: &TimeType{Has: false},
+		},
+		Menu:          &Menu{Part1Whisky: 250000, Part2Whisky: 0, TC: 130000, RT: 50000},
+		DatePublished: storeDate(2024, 1, 26),
+		DateModified:  storeDate(2024, 1, 26),
+	})
+	stores = append(stores, &Store{
+		Location: &Location{
+			Do:           "서울",
+			Si:           "강남구",
+			Dong:         "역삼동",
+			Address:      "832-7",
+			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.679446741483!2d127.02837221193238!3d37.49189017194145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1502738de7b%3A0x65a8ee648278baf2!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDsl63sgrzrj5kgODMyLTc!5e0!3m2!1sko!2skr!4v1704324092279!5m2!1sko!2skr",
+		},
+		Type:        STORE_TYPE_HIGHPUBLIC,
+		Title:       "방탄",
+		Description: "강남 방탄 하이퍼블릭은 서울 강남구의 인기 있는 유흥주점으로, 최신 음향 시스템과 현대적인 디자인을 자랑하며 다채로운 엔터테인먼트를 즐길 수 있습니다.",
+		Active: &Active{
+			IsPermanentClosed: false,
+			Reason:            "",
+		},
+		Hour: &Hour{
+			Part1: &TimeType{Has: true, Open: "18:00", Closed: "05:00"},
+			Part2: &TimeType{Has: false},
+		},
+		Menu:          &Menu{Part1Whisky: 200000, Part2Whisky: 0, TC: 130000, RT: 50000},
+		DatePublished: storeDate(2024, 1, 26),
+		DateModified:  storeDate(2024, 1, 26),
 	})
 }
 
@@ -423,7 +469,7 @@ func initLeggingsRoom() {
 		},
 		Menu:          &Menu{Part1Whisky: 250000, Part2Whisky: 0, TC: 150000, RT: 50000},
 		DatePublished: storeDate(2023, 9, 5),
-		DateModified:  storeDate(2023, 9, 5),
+		DateModified:  storeDate(2024, 1, 26),
 	})
 }
 
@@ -449,7 +495,7 @@ func initDot5() {
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
 		DatePublished: storeDate(2023, 9, 5),
-		DateModified:  storeDate(2023, 9, 5),
+		DateModified:  storeDate(2024, 1, 26),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -472,7 +518,7 @@ func initDot5() {
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
 		DatePublished: storeDate(2023, 9, 5),
-		DateModified:  storeDate(2023, 9, 5),
+		DateModified:  storeDate(2024, 1, 26),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -495,7 +541,7 @@ func initDot5() {
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
 		DatePublished: storeDate(2023, 9, 5),
-		DateModified:  storeDate(2023, 9, 5),
+		DateModified:  storeDate(2024, 1, 26),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -518,7 +564,7 @@ func initDot5() {
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
 		DatePublished: storeDate(2023, 9, 5),
-		DateModified:  storeDate(2023, 9, 5),
+		DateModified:  storeDate(2024, 1, 26),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -541,7 +587,7 @@ func initDot5() {
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
 		DatePublished: storeDate(2023, 9, 5),
-		DateModified:  storeDate(2023, 9, 5),
+		DateModified:  storeDate(2024, 1, 26),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -564,7 +610,7 @@ func initDot5() {
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
 		DatePublished: storeDate(2023, 9, 5),
-		DateModified:  storeDate(2023, 9, 5),
+		DateModified:  storeDate(2024, 1, 26),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -587,7 +633,7 @@ func initDot5() {
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
 		DatePublished: storeDate(2023, 9, 5),
-		DateModified:  storeDate(2023, 9, 5),
+		DateModified:  storeDate(2024, 1, 26),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -610,7 +656,7 @@ func initDot5() {
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
 		DatePublished: storeDate(2023, 9, 5),
-		DateModified:  storeDate(2023, 9, 5),
+		DateModified:  storeDate(2024, 1, 26),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -633,7 +679,7 @@ func initDot5() {
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
 		DatePublished: storeDate(2023, 9, 5),
-		DateModified:  storeDate(2023, 9, 5),
+		DateModified:  storeDate(2024, 1, 26),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -656,7 +702,7 @@ func initDot5() {
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
 		DatePublished: storeDate(2023, 9, 5),
-		DateModified:  storeDate(2023, 9, 5),
+		DateModified:  storeDate(2024, 1, 26),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -680,6 +726,29 @@ func initDot5() {
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
 		DatePublished: storeDate(2023, 9, 5),
 		DateModified:  storeDate(2023, 9, 5),
+	})
+	stores = append(stores, &Store{
+		Location: &Location{
+			Do:           "서울",
+			Si:           "강남구",
+			Dong:         "역삼동",
+			Address:      "677-22",
+			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.2307457193765!2d127.03704181193267!3d37.50247557193869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3f8acb4cd37%3A0xa46ef02bf086e82c!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDsl63sgrzrj5kgNjc3LTIy!5e0!3m2!1sko!2skr!4v1704324149895!5m2!1sko!2skr",
+		},
+		Type:        STORE_TYPE_DOT5,
+		Title:       "킹스맨",
+		Description: "강남 킹스맨 쩜오는 고급스러운 분위기의 강남구 유흥주점으로, 세련된 인테리어와 프리미엄 서비스로 강남의 밤문화를 대표하는 명소입니다.",
+		Active: &Active{
+			IsPermanentClosed: false,
+			Reason:            "",
+		},
+		Hour: &Hour{
+			Part1: &TimeType{Has: true, Open: "18:00", Closed: "05:00"},
+			Part2: &TimeType{Has: false},
+		},
+		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
+		DatePublished: storeDate(2024, 1, 26),
+		DateModified:  storeDate(2024, 1, 26),
 	})
 }
 
@@ -705,7 +774,7 @@ func initClub() {
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
 		DatePublished: storeDate(2023, 9, 5),
-		DateModified:  storeDate(2023, 9, 5),
+		DateModified:  storeDate(2024, 1, 26),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -728,7 +797,7 @@ func initClub() {
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
 		DatePublished: storeDate(2023, 9, 5),
-		DateModified:  storeDate(2023, 9, 5),
+		DateModified:  storeDate(2024, 1, 26),
 	})
 }
 
@@ -754,7 +823,7 @@ func initHobba() {
 		},
 		Menu:          &Menu{Part1Whisky: 180000, Part2Whisky: 0, TC: 60000, RT: 50000},
 		DatePublished: storeDate(2023, 9, 5),
-		DateModified:  storeDate(2023, 9, 5),
+		DateModified:  storeDate(2024, 1, 26),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -777,7 +846,7 @@ func initHobba() {
 		},
 		Menu:          &Menu{Part1Whisky: 180000, Part2Whisky: 0, TC: 60000, RT: 50000},
 		DatePublished: storeDate(2023, 9, 5),
-		DateModified:  storeDate(2023, 9, 5),
+		DateModified:  storeDate(2024, 1, 26),
 	})
 }
 
