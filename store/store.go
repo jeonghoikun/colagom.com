@@ -186,6 +186,29 @@ func initKaraoke() {
 		DatePublished: storeDate(2023, 9, 5),
 		DateModified:  storeDate(2023, 10, 15),
 	})
+	stores = append(stores, &Store{
+		Location: &Location{
+			Do:           "서울",
+			Si:           "강남구",
+			Dong:         "삼성동",
+			Address:      "142-35",
+			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.1043050533926!2d127.05085469999999!3d37.505458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca411d5a288d7%3A0xca6681460caa4840!2s411%20Teheran-ro%2C%20Gangnam-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1662046616801!5m2!1sen!2skr",
+		},
+		Type:        STORE_TYPE_KARAOKE,
+		Title:       "파티원",
+		Description: "강남 파티원 가라오케는 최신 노래 라이브러리와 화려한 무대로 여러분을 미쳐하게 할 최고의 유흥주점입니다. 노래를 부르고 춤추며 즐기는 가라오케 무대에서 또래와 즐거운 시간을 보내보세요!",
+		Active: &Active{
+			IsPermanentClosed: false,
+			Reason:            "",
+		},
+		Hour: &Hour{
+			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
+			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
+		},
+		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 150000, TC: 100000, RT: 50000},
+		DatePublished: storeDate(2024, 2, 18),
+		DateModified:  storeDate(2024, 2, 18),
+	})
 }
 
 func initShirtRoom() {
