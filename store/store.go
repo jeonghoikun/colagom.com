@@ -670,8 +670,8 @@ func initDot5() {
 		Title:       "머니볼",
 		Description: "강남 머니볼 쩜오는 대한민국 서울 강남 지역에 위치한 유흥주점 중 하나로, 도심의 번화가에서 활기찬 분위기와 다양한 엔터테인먼트를 제공하는 곳입니다. 이곳은 주로 젊은 이들과 비즈니스 모임을 위한 장소로 알려져 있으며, 다양한 음료와 칵테일, 안주 메뉴를 즐길 수 있습니다.",
 		Active: &Active{
-			IsPermanentClosed: false,
-			Reason:            "",
+			IsPermanentClosed: true,
+			Reason:            "더글로리로 상호 변경",
 		},
 		Hour: &Hour{
 			Part1: &TimeType{Has: true, Open: "18:00", Closed: "05:00"},
@@ -679,7 +679,7 @@ func initDot5() {
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
 		DatePublished: storeDate(2023, 9, 5),
-		DateModified:  storeDate(2024, 1, 26),
+		DateModified:  storeDate(2024, 3, 23),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -795,6 +795,29 @@ func initDot5() {
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
 		DatePublished: storeDate(2024, 1, 26),
 		DateModified:  storeDate(2024, 1, 26),
+	})
+	stores = append(stores, &Store{
+		Location: &Location{
+			Do:           "서울",
+			Si:           "강남구",
+			Dong:         "논현동",
+			Address:      "248-7",
+			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.741047626004!2d127.03369181564705!3d37.51402523489071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3f415b07255%3A0x2162a0d614d3c110!2s640%20Eonju-ro%2C%20Gangnam-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1678605759071!5m2!1sen!2skr",
+		},
+		Type:        STORE_TYPE_DOT5,
+		Title:       "더글로리",
+		Description: "강남 더글로리 쩜오는 최상의 서비스와 고급스러운 분위기로 강남의 밤을 화려하게 장식합니다. 매혹적인 인테리어와 섬세한 요리가 어우러져 모든 순간을 더욱 특별하게 만들어 드립니다.",
+		Active: &Active{
+			IsPermanentClosed: false,
+			Reason:            "",
+		},
+		Hour: &Hour{
+			Part1: &TimeType{Has: true, Open: "18:00", Closed: "05:00"},
+			Part2: &TimeType{Has: false},
+		},
+		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
+		DatePublished: storeDate(2024, 3, 23),
+		DateModified:  storeDate(2024, 3, 23),
 	})
 }
 
