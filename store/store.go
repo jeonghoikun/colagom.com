@@ -198,8 +198,8 @@ func initKaraoke() {
 		Title:       "파티원",
 		Description: "강남 파티원 가라오케는 최신 노래 라이브러리와 화려한 무대로 여러분을 미쳐하게 할 최고의 유흥주점입니다. 노래를 부르고 춤추며 즐기는 가라오케 무대에서 또래와 즐거운 시간을 보내보세요!",
 		Active: &Active{
-			IsPermanentClosed: false,
-			Reason:            "",
+			IsPermanentClosed: true,
+			Reason:            "정상폐업",
 		},
 		Hour: &Hour{
 			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
