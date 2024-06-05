@@ -247,8 +247,8 @@ func initShirtRoom() {
 		Title:       "유앤미",
 		Description: "강남 유앤미 셔츠룸은 화려한 강남 지역에서 즐길 수 있는 역동적인 유흥주점으로, 멋진 셔츠룸 경험과 다양한 엔터테인먼트 옵션을 제공합니다.",
 		Active: &Active{
-			IsPermanentClosed: false,
-			Reason:            "",
+			IsPermanentClosed: true,
+			Reason:            "하이퍼블릭으로 업종 변경",
 		},
 		Hour: &Hour{
 			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
@@ -256,7 +256,7 @@ func initShirtRoom() {
 		},
 		Menu:          &Menu{Part1Whisky: 160000, Part2Whisky: 130000, TC: 120000, RT: 50000},
 		DatePublished: storeDate(2023, 9, 5),
-		DateModified:  storeDate(2024, 1, 26),
+		DateModified:  storeDate(2024, 6, 4),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -490,6 +490,29 @@ func initHighPublic() {
 		Menu:          &Menu{Part1Whisky: 200000, Part2Whisky: 0, TC: 130000, RT: 50000},
 		DatePublished: storeDate(2024, 1, 26),
 		DateModified:  storeDate(2024, 1, 26),
+	})
+	stores = append(stores, &Store{
+		Location: &Location{
+			Do:           "서울",
+			Si:           "강남구",
+			Dong:         "잠원동",
+			Address:      "18-9",
+			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.7060647283693!2d127.0171104!3d37.514850200000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3dd364c8bc7%3A0x3ab4d058c71d79a8!2s18-9%20Jamwon-dong%2C%20Seocho-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1670862647642!5m2!1sen!2skr",
+		},
+		Type:        STORE_TYPE_HIGHPUBLIC,
+		Title:       "유앤미",
+		Description: "강남 유앤미 하이퍼블릭은 최신 음향과 조명을 갖춘 고급 유흥업소입니다. 세련된 인테리어와 다양한 엔터테인먼트로 특별한 밤을 즐길 수 있습니다. 지금 예약하세요!",
+		Active: &Active{
+			IsPermanentClosed: false,
+			Reason:            "",
+		},
+		Hour: &Hour{
+			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
+			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
+		},
+		Menu:          &Menu{Part1Whisky: 160000, Part2Whisky: 130000, TC: 120000, RT: 50000},
+		DatePublished: storeDate(2024, 6, 4),
+		DateModified:  storeDate(2024, 6, 4),
 	})
 }
 
