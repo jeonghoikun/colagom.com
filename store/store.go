@@ -303,7 +303,7 @@ func initHighPublic() {
 			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
 			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
 		},
-		Menu:          &Menu{Part1Whisky: 170000, Part2Whisky: 140000, TC: 110000, RT: 50000},
+		Menu:          &Menu{Part1Whisky: 170000, Part2Whisky: 150000, TC: 120000, RT: 50000},
 		DatePublished: storeDate(2023, 9, 5),
 		DateModified:  storeDate(2024, 1, 26),
 	})
@@ -326,7 +326,7 @@ func initHighPublic() {
 			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
 			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
 		},
-		Menu:          &Menu{Part1Whisky: 170000, Part2Whisky: 140000, TC: 110000, RT: 50000},
+		Menu:          &Menu{Part1Whisky: 170000, Part2Whisky: 150000, TC: 120000, RT: 50000},
 		DatePublished: storeDate(2023, 9, 28),
 		DateModified:  storeDate(2024, 1, 26),
 	})
@@ -349,7 +349,7 @@ func initHighPublic() {
 			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
 			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
 		},
-		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 110000, RT: 50000},
+		Menu:          &Menu{Part1Whisky: 200000, Part2Whisky: 0, TC: 120000, RT: 50000},
 		DatePublished: storeDate(2023, 9, 5),
 		DateModified:  storeDate(2024, 1, 26),
 	})
@@ -372,7 +372,7 @@ func initHighPublic() {
 			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
 			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
 		},
-		Menu:          &Menu{Part1Whisky: 170000, Part2Whisky: 140000, TC: 110000, RT: 50000},
+		Menu:          &Menu{Part1Whisky: 170000, Part2Whisky: 150000, TC: 120000, RT: 50000},
 		DatePublished: storeDate(2023, 9, 5),
 		DateModified:  storeDate(2024, 1, 26),
 	})
@@ -441,7 +441,7 @@ func initHighPublic() {
 			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
 			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
 		},
-		Menu:          &Menu{Part1Whisky: 200000, Part2Whisky: 160000, TC: 120000, RT: 50000},
+		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 150000, TC: 120000, RT: 50000},
 		DatePublished: storeDate(2023, 10, 15),
 		DateModified:  storeDate(2024, 1, 26),
 	})
@@ -464,7 +464,7 @@ func initHighPublic() {
 			Part1: &TimeType{Has: true, Open: "18:00", Closed: "05:00"},
 			Part2: &TimeType{Has: false},
 		},
-		Menu:          &Menu{Part1Whisky: 250000, Part2Whisky: 0, TC: 130000, RT: 50000},
+		Menu:          &Menu{Part1Whisky: 200000, Part2Whisky: 0, TC: 120000, RT: 50000},
 		DatePublished: storeDate(2024, 1, 26),
 		DateModified:  storeDate(2024, 1, 26),
 	})
@@ -510,7 +510,7 @@ func initHighPublic() {
 			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
 			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
 		},
-		Menu:          &Menu{Part1Whisky: 160000, Part2Whisky: 130000, TC: 120000, RT: 50000},
+		Menu:          &Menu{Part1Whisky: 170000, Part2Whisky: 150000, TC: 120000, RT: 50000},
 		DatePublished: storeDate(2024, 6, 4),
 		DateModified:  storeDate(2024, 6, 4),
 	})
