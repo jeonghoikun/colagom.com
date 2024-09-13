@@ -578,8 +578,8 @@ func initDot5() {
 		Title:       "831",
 		Description: "강남 831 쩜오는 편안한 의자와 테이블이 배치된 모던하고 스타일리시한 인테리어로 꾸며져 있으며, DJ의 멋진 음악과 무대 퍼포먼스로 고객들에게 즐거운 시간을 선사합니다. 또한, 다양한 주류 메뉴와 칵테일을 제공하여, 고객들이 자신의 취향에 맞게 골라 즐길 수 있습니다.",
 		Active: &Active{
-			IsPermanentClosed: false,
-			Reason:            "",
+			IsPermanentClosed: true,
+			Reason:            "썸데이로 상호 변경",
 		},
 		Hour: &Hour{
 			Part1: &TimeType{Has: true, Open: "18:00", Closed: "05:00"},
@@ -587,7 +587,7 @@ func initDot5() {
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
 		DatePublished: storeDate(2023, 9, 5),
-		DateModified:  storeDate(2024, 1, 26),
+		DateModified:  storeDate(2024, 9, 13),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -887,6 +887,29 @@ func initDot5() {
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
 		DatePublished: storeDate(2024, 4, 27),
 		DateModified:  storeDate(2024, 4, 27),
+	})
+	stores = append(stores, &Store{
+		Location: &Location{
+			Do:           "서울",
+			Si:           "강남구",
+			Dong:         "역삼동",
+			Address:      "831",
+			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.5641798788934!2d127.0297203!3d37.4946097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1508715f00d%3A0xf4d079a0f225c1b1!2s831%20Yeoksam-dong%2C%20Gangnam-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1679397724056!5m2!1sen!2skr",
+		},
+		Type:        STORE_TYPE_DOT5,
+		Title:       "썸데이",
+		Description: "강남 썸데이 쩜오는 세련된 인테리어와 고급스러운 분위기 속에서 다양한 프리미엄 음료를 즐길 수 있는 유흥주점입니다. 전문 바텐더가 제공하는 독창적인 칵테일과 주류는 고객의 취향을 만족시키며, 프라이빗한 공간에서 편안하게 시간을 보낼 수 있습니다. 차별화된 서비스와 세심한 배려로 강남의 밤을 더욱 특별하게 만들어주는 최적의 장소입니다.",
+		Active: &Active{
+			IsPermanentClosed: false,
+			Reason:            "",
+		},
+		Hour: &Hour{
+			Part1: &TimeType{Has: true, Open: "18:00", Closed: "05:00"},
+			Part2: &TimeType{Has: false},
+		},
+		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
+		DatePublished: storeDate(2024, 9, 13),
+		DateModified:  storeDate(2024, 9, 13),
 	})
 }
 
