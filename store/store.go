@@ -911,6 +911,29 @@ func initDot5() {
 		DatePublished: storeDate(2024, 9, 13),
 		DateModified:  storeDate(2024, 9, 13),
 	})
+	stores = append(stores, &Store{
+		Location: &Location{
+			Do:           "서울",
+			Si:           "강남구",
+			Dong:         "역삼동",
+			Address:      "822-5",
+			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.3849794120856!2d127.02926860000001!3d37.4988373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca159d7d08f47%3A0x19ac7457d361928!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDthYztl6TrnoDroZwgMTEx!5e0!3m2!1sko!2skr!4v1661153125692!5m2!1sko!2skr",
+		},
+		Type:        STORE_TYPE_DOT5,
+		Title:       "블렌딩",
+		Description: "",
+		Active: &Active{
+			IsPermanentClosed: false,
+			Reason:            "",
+		},
+		Hour: &Hour{
+			Part1: &TimeType{Has: true, Open: "18:00", Closed: "05:00"},
+			Part2: &TimeType{Has: false},
+		},
+		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
+		DatePublished: storeDate(2024, 9, 20),
+		DateModified:  storeDate(2024, 9, 20),
+	})
 }
 
 func initClub() {
