@@ -388,8 +388,8 @@ func initHighPublic() {
 		Title:       "메이커",
 		Description: "강남 메이커 하이퍼블릭은 대한민국 서울의 강남 지역에서 유명한 유흥주점 중 하나입니다. 이 곳은 강남의 화려한 밤문화와 열기로운 분위기를 즐기고 싶은 사람들을 위한 완벽한 장소입니다.",
 		Active: &Active{
-			IsPermanentClosed: false,
-			Reason:            "",
+			IsPermanentClosed: true,
+			Reason:            "정상폐업",
 		},
 		Hour: &Hour{
 			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
@@ -397,7 +397,7 @@ func initHighPublic() {
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 110000, RT: 50000},
 		DatePublished: storeDate(2023, 9, 5),
-		DateModified:  storeDate(2023, 9, 5),
+		DateModified:  storeDate(2024, 11, 15),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
